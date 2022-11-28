@@ -8,7 +8,7 @@
 
 <body>
   <!--Хедер-->
-  
+
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logotype-phone.svg" width="33" height="38" alt="Логотип.">
@@ -37,10 +37,10 @@
   <!--Подбор программы-->
   <section class="program-selection">
     <div class="program-selection__wraper">
-      <h1 class="program-selection__title">Подбор программы</h1>
-      <div class="personal-data">
-        <h3 class="personal-data__title">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
-        <form class="personal-data-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="personal-data-form" action="https://echo.htmlacademy.ru" method="post">
+        <h1 class="program-selection__title">Подбор программы</h1>
+        <div class="personal-data">
+          <h3 class="personal-data__title">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
           <p class="personal-data-form__group">
             <label class="personal-data-form__name" for="cat-name">Имя:*</label>
             <input class="personal-data-form__description" type="text" value="" id="cat-name" name="cat-name"
@@ -56,86 +56,87 @@
             <input class="personal-data-form__description" type="number" value="" id="cat-age" name="cat-age"
               placeholder="7" required>
           </p>
-      </div>
-      <ul class="catalog-filter-list">
-        <li class="catalog-filter-item">
-          <input class="catalog-filter-item__input visually-hidden" type="radio" name="product-group"
-            value="weight loss" checked>
-          <span class="catalog-filter-item__mark-radio"></span>
-          <span class="catalog-filter-item__control-label">Похудение</span>
-        </li>
-        <li class="catalog-filter-item">
-          <input class="catalog-filter-item__input visually-hidden" type="radio" name="product-group"
-            value="weight gain">
-          <span class="catalog-filter-item__mark-radio"></span>
-          <span class="">Набор массы</span>
-        </li>
-        <li class="catalog-filter-item">
-          <input class="catalog-filter-item__input visually-hidden" type="radio" name="product-group"
-            value="I dnt know (need advice)">
-          <span class="catalog-filter-item__mark-radio"></span>
-          <span class="catalog-filter-item__control-label">Не знаю (нужен Ваш совет)</span>
-        </li>
-      </ul>
-      <!--Контактные данные (владельца кота)-->
-      <div class="contacts">
-        <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
-        <label>
-          <span class="contacts__name">E-mail</span>
-          <input class="contacts__description" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-        </label>
-        <label>
-          <span class="contacts__name">Телефон:*</span>
-          <input class="contacts__description" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-        </label>
-      </div>
-      <!--Комментарий-->
-      <div class="comment">
-        <h2 class="comment__title">Комментарий</h2>
-        <textarea class="comment__text" name="comment" cols="40" rows="6"
-          placeholder="Расскажите обо всех повадках кота"></textarea>
-      </div>
-      <!--Дополнительно-->
-      <div class="additionally">
-        <h2 class="additionally__title">Дополнительно</h2>
-        <ul class="additionally__list">
-          <li class="additionally__item">
-            <label class="additionally__control">
-              <input class="additionally__control-input visually-hidden" type="checkbox" name="sweetener" checked>
-              <span class="additionally__control-mark"></span>
-              <span class="additionally__control-label">Сахарозаменитель</span>
-            </label>
+        </div>
+        <ul class="catalog-filter-list">
+          <li class="catalog-filter-item">
+            <input class="catalog-filter-item__input visually-hidden" type="radio" name="product-group"
+              value="weight loss" checked>
+            <span class="catalog-filter-item__mark-radio"></span>
+            <span class="catalog-filter-item__control-label">Похудение</span>
           </li>
-          <li class="additionally__item">
-            <label class="additionally__control">
-              <input class="additionally__control-input visually-hidden" type="checkbox" name="drinking water">
-              <span class="additionally__control-mark"></span>
-              <span class="additionally__control-label">Питьевая вода</span>
-            </label>
+          <li class="catalog-filter-item">
+            <input class="catalog-filter-item__input visually-hidden" type="radio" name="product-group"
+              value="weight gain">
+            <span class="catalog-filter-item__mark-radio"></span>
+            <span class="">Набор массы</span>
           </li>
-          <li class="additionally__item">
-            <label class="additionally__control">
-              <input class="additionally__control-input visually-hidden" type="checkbox" name="milk">
-              <span class="additionally__control-mark"></span>
-              <span class="additionally__control-label">Молоко</span>
-            </label>
-          </li>
-          <li class="additionally__item">
-            <label class="additionally__control">
-              <input class="additionally__control-input visually-hidden" type="checkbox" name="vitamins">
-              <span class="additionally__control-mark"></span>
-              <span class="additionally__control-label">Витамины</span>
-            </label>
+          <li class="catalog-filter-item">
+            <input class="catalog-filter-item__input visually-hidden" type="radio" name="product-group"
+              value="I dnt know (need advice)">
+            <span class="catalog-filter-item__mark-radio"></span>
+            <span class="catalog-filter-item__control-label">Не знаю (нужен Ваш совет)</span>
           </li>
         </ul>
-      </div>
-      <div class="catalog-submit">
-        <button class="catalog-submit__catalog-button catalog-button" type="submit">Отправить заявку</button>
-        <p class="catalog-submit__required-fields">* — Обязательные поля</p>
-      </div>
+        <!--Контактные данные (владельца кота)-->
+        <div class="contacts">
+          <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+          <label>
+            <span class="contacts__name">E-mail</span>
+            <input class="contacts__description" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+          </label>
+          <label>
+            <span class="contacts__name">Телефон:*</span>
+            <input class="contacts__description" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+          </label>
+        </div>
+        <!--Комментарий-->
+        <div class="comment">
+          <h2 class="comment__title">Комментарий</h2>
+          <textarea class="comment__text" name="comment" cols="40" rows="6"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+        <!--Дополнительно-->
+        <div class="additionally">
+          <h2 class="additionally__title">Дополнительно</h2>
+          <ul class="additionally__list">
+            <li class="additionally__item">
+              <label class="additionally__control">
+                <input class="additionally__control-input visually-hidden" type="checkbox" name="sweetener" checked>
+                <span class="additionally__control-mark"></span>
+                <span class="additionally__control-label">Сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__control">
+                <input class="additionally__control-input visually-hidden" type="checkbox" name="drinking water">
+                <span class="additionally__control-mark"></span>
+                <span class="additionally__control-label">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__control">
+                <input class="additionally__control-input visually-hidden" type="checkbox" name="milk">
+                <span class="additionally__control-mark"></span>
+                <span class="additionally__control-label">Молоко</span>
+              </label>
+            </li>
+            <li class="additionally__item">
+              <label class="additionally__control">
+                <input class="additionally__control-input visually-hidden" type="checkbox" name="vitamins">
+                <span class="additionally__control-mark"></span>
+                <span class="additionally__control-label">Витамины</span>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog-submit">
+          <button class="catalog-submit__catalog-button catalog-button" type="submit">Отправить заявку</button>
+          <p class="catalog-submit__required-fields">* — Обязательные поля</p>
+        </div>
       </form>
     </div>
   </section>
+
   <!--Футер-->
   <footer class="main-footer">
     <div class="main-footer__wrapper">
