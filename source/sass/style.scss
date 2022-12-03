@@ -1,3 +1,4 @@
+@import "./blocks/fonts.scss";
 @import "./blocks/page.scss";
 @import "./blocks/additional-products-title.scss";
 @import "./blocks/additional-products.scss";
@@ -41,21 +42,6 @@
 @import "./blocks/specifications.scss";
 @import "./blocks/visually-hidden.scss";
 
-@font-face {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
 
 body {
   margin: 0 auto;
@@ -65,5 +51,21 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #444444;
+
+  width: 320px;
 }
 
+h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}

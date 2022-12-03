@@ -17,10 +17,10 @@
     <img class="logo__image logo__image--text" src="img/logotype-text.svg" width="101" height="18" alt="Кэт энерджи.">
     </a>
     <nav class="nav">
-      <button class="nav-toggle nav-toggle--close" type="button">
+      <button class="nav-toggle nav-toggle--close" type="button" onclick="myFunction()">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="nav-list">
+      <ul class="nav-list" id="myDropdown">
         <li class="nav-list__item">
           <a class="nav-list__link" href="index.html">Главная</a>
         </li>
@@ -51,7 +51,7 @@
         <input class="personal-data__description" type="number" value="" id="cat-age" name="cat-age" placeholder="7" required>
       </p>
     </fieldset>
-    <fieldset  class="form__program-selection program-selection">
+    <fieldset class="form__program-selection program-selection">
       <legend class="visually-hidden">Подбор программы для усатого любимца</legend>
       <ul class="program-selection__list">
         <li class="program-selection__item">
@@ -80,7 +80,7 @@
     </fieldset>
     <fieldset class="form__comment comment">
       <legend class="comment__title">Комментарий</legend>
-      <textarea class="comment__text" name="comment" cols="40" rows="6" placeholder="Расскажите обо всех повадках кота" title="Напишите нам о своём усатом любимце"></textarea>
+      <textarea class="comment__text" name="comment" cols="34" rows="6" placeholder="Расскажите обо всех повадках кота" title="Напишите нам о своём усатом любимце"></textarea>
     </fieldset>
     <fieldset class="form__additionally additionally">
       <legend class="additionally__title">Дополнительно</legend>
@@ -120,7 +120,7 @@
   </form>
   <footer class="footer">
     <div class="footer__wrapper">
-      <section class="footer__contacts contacts">
+      <section class="footer__contacts footer__contacts--form contacts">
         <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <a class="contacts__link" href="https://goo.gl/maps/569WVzsEwXHTvs1K8">
@@ -150,6 +150,7 @@
       </div>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
