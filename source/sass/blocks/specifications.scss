@@ -1,0 +1,29 @@
+.specifications {
+  grid-row: 2 / 3;
+}
+
+.specifications__name,
+.specifications__description {
+  display: inline;
+}
+
+.specifications__title {
+  font-family: "Oswald", sans-serif;
+  font-style: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 31px;
+  padding-left: 20px;
+}
+
+.specifications__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px 20px 14px 20px;
+}
+
+.additional-products__item .specifications__list {
+  display: flex;
+  justify-content: space-between;
+}

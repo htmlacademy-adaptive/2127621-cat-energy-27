@@ -7,24 +7,20 @@
   margin: 40px auto;
 }
 
-.footer__logo-link::after {
+//серая полоска
+/*.footer__logo-link::after {
   content: "";
   display: flex;
   margin: 0 auto;
   height: 1px;
   background-color: #d9d9d9;
   width: 280px;
-}
-
-.footer__social::after {
-  content: "";
-  display: flex;
-  margin: 0 auto;
-  height: 1px;
-  background-color: #d9d9d9;
-  width: 280px;
-}
+}*/
 
 .footer__contacts--form {
+  background-color: #f2f2f2;
+}
+
+.footer__contacts--catalog {
   background-color: #f2f2f2;
 }

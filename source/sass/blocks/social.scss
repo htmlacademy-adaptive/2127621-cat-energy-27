@@ -1,6 +1,17 @@
 .social {
+  display: flex;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
+//серая полоска
+/*.social::after {
+  content: "";
+  display: flex;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 280px;
+}/*
