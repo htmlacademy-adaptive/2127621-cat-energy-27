@@ -23,7 +23,23 @@
   margin: 10px 20px 14px 20px;
 }
 
-.additional-products__item .specifications__list {
+.specifications__list--additional-products {
   display: flex;
   justify-content: space-between;
+}
+
+.specifications__link {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  margin: 0 auto;
+  width: 280px;
+  cursor: pointer;
 }

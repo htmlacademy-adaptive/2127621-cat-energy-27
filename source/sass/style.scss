@@ -1,11 +1,9 @@
-@import "./blocks/fonts.scss";
+@import "./fonts.scss";
+@import "./global.scss";
 @import "./blocks/page.scss";
-@import "./blocks/additional-products-title.scss";
 @import "./blocks/additional-products.scss";
 @import "./blocks/additionally.scss";
 @import "./blocks/bonus.scss";
-@import "./blocks/catalog-button.scss";
-@import "./blocks/catalog-submit.scss";
 @import "./blocks/comment.scss";
 @import "./blocks/contacts.scss";
 @import "./blocks/container.scss";
@@ -16,59 +14,17 @@
 @import "./blocks/footer.scss";
 @import "./blocks/form.scss";
 @import "./blocks/header.scss";
-@import "./blocks/hero-link.scss";
-@import "./blocks/hero-product.scss";
-@import "./blocks/hero-subtitle.scss";
-@import "./blocks/hero-title.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-container.scss";
-@import "./blocks/more-products-link.scss";
 @import "./blocks/more-products.scss";
-@import "./blocks/nav-list.scss";
 @import "./blocks/nav-toggle.scss";
 @import "./blocks/nav.scss";
-@import "./blocks/personal-contacts.scss";
 @import "./blocks/personal-data.scss";
 @import "./blocks/product.scss";
-@import "./blocks/products-card-image.scss";
-@import "./blocks/products-card-link.scss";
-@import "./blocks/products-card-title.scss";
-@import "./blocks/products-title.scss";
+@import "./blocks/products-card.scss";
 @import "./blocks/products.scss";
 @import "./blocks/program-selection.scss";
 @import "./blocks/social.scss";
-@import "./blocks/specifications-card-link.scss";
 @import "./blocks/specifications.scss";
 @import "./blocks/visually-hidden.scss";
-
-
-body {
-  margin: 0 auto;
-  min-height: 100%;
-  font-family: "Lato", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 400;
-  color: #444444;
-  width: 320px;
-}
-
-h1,
-h2,
-h3 {
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  margin: 0;
-}
-
-ul {
-  list-style-type: none;
-}

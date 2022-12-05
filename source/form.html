@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="/source/img/favicon.png">
 </head>
 
-<body>
+<body class="page__body">
   <header class="header">
     <a class="header__logo logo logo--icon" href="index.html">
       <img class="logo__image logo__image--icon" src="img/logotype-icon.svg" width="33" height="38" alt="Логотип.">
@@ -20,15 +20,15 @@
       <button class="nav-toggle nav-toggle--close" type="button" onclick="myFunction()">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <ul class="nav-list" id="myDropdown">
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="index.html">Главная</a>
+      <ul class="nav__list" id="myDropdown">
+        <li class="nav__list-item">
+          <a class="nav__list-link" href="index.html">Главная</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
+        <li class="nav__list-item">
+          <a class="nav__list-link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="nav-list__item">
-          <a class="nav-list__link nav-list__link--current" href="form.html" aria-current="page">Подбор программы</a>
+        <li class="nav__list-item">
+          <a class="nav__list-link nav__list-link--current" href="form.html" aria-current="page">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -71,16 +71,16 @@
         </li>
       </ul>
     </fieldset>
-    <fieldset class="form__personal-contacts personal-contacts">
-      <legend class="personal-contacts__title">Контактные данные (владельца кота)</legend>
-      <label class="personal-contacts__name" for="email">E-mail</label>
-      <input class="personal-contacts__description" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
-      <label class="personal-contacts__name" for="phone">Телефон:*</label>
-      <input class="personal-contacts__description" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+    <fieldset class="form__personal-contacts personal-data">
+      <legend class="personal-data__contacts-title">Контактные данные (владельца кота)</legend>
+      <label class="personal-data__contacts-name" for="email">E-mail</label>
+      <input class="personal-data__contacts-description" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+      <label class="personal-data__contacts-name" for="phone">Телефон:*</label>
+      <input class="personal-data__contacts-description" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
     </fieldset>
     <fieldset class="form__comment comment">
-      <legend class="comment__title">Комментарий</legend>
-      <textarea class="comment__text" name="comment" cols="34" rows="6" placeholder="Расскажите обо всех повадках кота" title="Напишите нам о своём усатом любимце"></textarea>
+      <label class="comment__title" for="comment-field">Комментарий</label>
+      <textarea class="comment__text" name="comment" cols="34" rows="6" placeholder="Расскажите обо всех повадках кота" title="Напишите нам о своём усатом любимце" id="comment-field"></textarea>
     </fieldset>
     <fieldset class="form__additionally additionally">
       <legend class="additionally__title">Дополнительно</legend>
@@ -114,8 +114,8 @@
           </label>
         </li>
       </ul>
-      <button class="catalog-button" type="submit">Отправить заявку</button>
-      <p class="catalog-submit">* — Обязательные поля</p>
+      <button class="form__button" type="submit">Отправить заявку</button>
+      <p class="form__submit">* — Обязательные поля</p>
     </fieldset>
   </form>
   <footer class="footer">
