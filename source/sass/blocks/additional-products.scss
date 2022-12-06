@@ -1,0 +1,30 @@
+.additional-products {
+  background-color: #ffffff;
+}
+
+.additional-products__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.additional-products__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+//серая линия
+/*.products__item::after {
+  content: "";
+  position: absolute;
+  top: 170px;
+  left: -40px;
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 320px;
+}*/

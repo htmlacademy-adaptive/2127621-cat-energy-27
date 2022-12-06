@@ -1,0 +1,45 @@
+.specifications {
+  grid-row: 2 / 3;
+}
+
+.specifications__name,
+.specifications__description {
+  display: inline;
+}
+
+.specifications__title {
+  font-family: "Oswald", sans-serif;
+  font-style: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 31px;
+  padding-left: 20px;
+}
+
+.specifications__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 10px 20px 14px 20px;
+}
+
+.specifications__list--additional-products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specifications__link {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  padding: 10px 0;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #68b738;
+  margin: 0 auto;
+  width: 280px;
+  cursor: pointer;
+}

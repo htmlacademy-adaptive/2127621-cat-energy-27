@@ -1,0 +1,42 @@
+.nav {
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+}
+
+.nav__list-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.nav__list {
+  display: none;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #ffffff;
+  min-width: 320px;
+  z-index: 1;
+}
+
+.nav__list-item {
+  text-align: center;
+  display: block;
+  border-top: 1px solid #e6e6e6;
+  padding: 22px 0 24px 0;
+}
+
+.nav__list-item:last-child {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.show {
+  display: block;
+}
