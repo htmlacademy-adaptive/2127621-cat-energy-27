@@ -9,16 +9,27 @@
   list-style-type: none;
 }
 
+@media (min-width: 1440px) {
+  .features__list {
+    display: flex;
+  }
+}
+
 .features__item {
   padding-bottom: 20px;
+  margin-bottom: 20px;
   background-color: #f2f2f2;
 }
 
-.features__item:first-child {
-  margin-bottom: 20px;
+@media (min-width: 1440px) {
+  .features__item:not(:last-child) {
+    margin-right: 80px;
+  }
 }
 
 .features__subject {
+  display: block;
+  position: relative;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
@@ -26,6 +37,31 @@
   line-height: 37px;
   font-weight: 400;
   padding-top: 30px;
+  margin-left: 91px;
+}
+
+.features__item-slim::before {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: -71px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../img/black-cat-is-sitting.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item-pro::before {
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -78px;
+  width: 68px;
+  height: 50px;
+  background-image: url("../../img/black-cat-is-coming.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features__wrapper {

@@ -2,6 +2,33 @@
   background-color: #ffffff;
 }
 
+@media (min-width: 1440px) {
+  .additional-products__wrapper {
+    display: grid;
+    grid-template-columns: 895px 245px;
+  }
+}
+
+@media (min-width: 768px) {
+  .additional-products__item {
+    border: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional-products__item {
+    border-left: none;
+    border-right: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional-products__item {
+    display: grid;
+    grid-template-columns: 325px 283px 244px;
+  }
+}
+
 .additional-products__title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;

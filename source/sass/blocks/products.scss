@@ -28,3 +28,17 @@
   padding: 0;
   padding-top: 60px;
 }
+
+@media (min-width: 768px) {
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
+
+@media (min-width: 1440px) {
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+  }
+}

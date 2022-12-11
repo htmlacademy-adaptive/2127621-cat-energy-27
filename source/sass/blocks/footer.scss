@@ -24,3 +24,17 @@
 .footer__contacts--catalog {
   background-color: #f2f2f2;
 }
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .footer__inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

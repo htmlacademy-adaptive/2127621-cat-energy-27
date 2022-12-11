@@ -9,10 +9,107 @@
   line-height: 40px;
   color: #000000;
   padding-left: 20px;
+  margin-bottom: 42px;
 }
 
 .product__list {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-bottom: 49px;
   list-style-type: none;
+}
+
+@media (min-width: 768px) {
+  .product__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .product__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  //border: 1px solid black;
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .product__item {
+    width: 364px;
+  }
+}
+
+.product__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.product__item--nutrients .product__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/nutrients.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product__item--powder .product__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/powder.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product__item--functional-nutrition .product__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/functional-nutrition.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product__item--changes-better .product__description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/changes-better.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product__description {
+  margin-left: 100px;
+  padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .product__description {
+    width: 245px;
+  }
 }
