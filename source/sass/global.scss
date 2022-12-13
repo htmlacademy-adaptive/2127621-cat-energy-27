@@ -2,6 +2,17 @@
 @desktop-width: 1200px;
 @mobile-width-only: 767px;
 
+.container {
+  background: #ffffff;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
 h1,
 h2,
 h3 {

@@ -2,6 +2,13 @@
   background-color: #ffffff;
 }
 
+@media (min-width: 1440px) {
+  .product__wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
 .product__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -33,6 +40,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
+    width: 1220px;
   }
 }
 
@@ -48,6 +56,12 @@
 @media (min-width: 768px) {
   .product__item {
     width: 364px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .product__description::before {
+    position: absolute;
   }
 }
 
