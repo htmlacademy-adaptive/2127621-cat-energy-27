@@ -1,22 +1,28 @@
 .header {
+  background-color: #ffffff;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 65px;
   padding-left: 20px;
+  max-width: 1440px;
   margin: 0 auto;
-  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
-  .header {
+  .header__wrapper {
     padding-left: 30px;
     padding-right: 30px;
   }
 }
 
 @media (min-width: 1440px) {
-  .header {
+  .header__wrapper {
     padding-left: 110px;
     padding-right: 110px;
   }

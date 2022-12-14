@@ -1,6 +1,7 @@
 .hero {
+  max-width: 1440px;
   margin: 0 auto;
-  background: rgba(104, 183, 56, 0.85) url("../../img/hero-background.png") top center no-repeat;
+  background: rgba(104, 183, 56, 0.85) url("../img/hero-background.png") top center no-repeat;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
   text-align: center;
@@ -9,23 +10,26 @@
 @media (min-width: 768px) {
   .hero {
     background: #ffffff;
-    padding-left: 30px;
-    padding-right: 30px;
   }
 }
 
 @media (min-width: 1440px) {
   .hero {
     background: #ffffff;
-    padding-left: 110px;
-    padding-right: 110px;
   }
+}
+
+.hero__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: 768px) {
   .hero__wrapper {
     display: grid;
     margin-left: 87px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -35,6 +39,8 @@
     grid-template-columns: 414px 552px;
     grid-template-rows: repeat(2, min-content);
     margin-left: 80px;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -110,7 +116,7 @@
 
 .hero__link {
   width: 192px;
-  padding: 11px 74px;
+  padding: 11px 73px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;

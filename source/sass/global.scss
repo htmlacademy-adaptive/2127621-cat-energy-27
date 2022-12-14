@@ -3,12 +3,19 @@
 @mobile-width-only: 767px;
 
 .container {
-  background: #ffffff;
+  //background: #ffffff;
 }
+
+
+.page__body {
+  //max-width: 1440px;
+  //margin: 0 auto;
+}
+
+
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1440px;
     margin: 0 auto;
   }
 }
