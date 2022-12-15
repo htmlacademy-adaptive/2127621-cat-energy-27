@@ -3,8 +3,10 @@
   background-color: #f2f2f2;
 }
 
-.footer__wrapper {
-
+@media (min-width: 1440px) {
+  .footer__contacts {
+    margin-top: 86px;
+  }
 }
 
 .footer__logo-link-image {

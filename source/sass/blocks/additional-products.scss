@@ -1,31 +1,22 @@
 .additional-products {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #ffffff;
 }
 
-@media (min-width: 1440px) {
-  .additional-products__wrapper {
-    display: grid;
-    grid-template-columns: 895px 245px;
-  }
-}
-
 @media (min-width: 768px) {
-  .additional-products__item {
-    border: 1px solid #cdcdcd;
+  .additional-products {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
 @media (min-width: 1440px) {
-  .additional-products__item {
-    border-left: none;
-    border-right: none;
-  }
-}
-
-@media (min-width: 1440px) {
-  .additional-products__item {
-    display: grid;
-    grid-template-columns: 325px 283px 244px;
+  .additional-products {
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -35,14 +26,75 @@
   line-height: 24px;
   font-weight: 400;
   color: #000000;
+  margin: 0;
+  padding: 0;
+
   padding-top: 50px;
-  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .additional-products__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.additional-products__wrapper {
+  margin-top: 36px;
+}
+
+@media (min-width: 768px) {
+  .additional-products__wrapper {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional-products__wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin-top: 80px;
+  }
 }
 
 .additional-products__list {
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+
+.additional-products__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .additional-products__item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 1px solid #cdcdcd;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional-products__item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .additional-products__item:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 //серая линия

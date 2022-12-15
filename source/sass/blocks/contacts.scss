@@ -69,7 +69,6 @@
   background-color: #f2f2f2;
 }
 
-
 .contacts__link {
   position: relative;
   z-index: 1;
@@ -79,7 +78,6 @@
   display: block;
   height: 362px;
 }
-
 
 @media (min-width: 768px) {
   .contacts__image {
@@ -93,7 +91,5 @@
   z-index: 2;
   border: none;
   width: 100%;
-  max-width: auto;
-
   height: 100%;
 }

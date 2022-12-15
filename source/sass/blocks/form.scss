@@ -1,11 +1,43 @@
+.form-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
 .form {
   background-color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .form-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media (min-width: 1440px) {
-  .form__wrapper {
+  .form-wrapper {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}
+
+.form__inner {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 1440px) {
+  .form__inner {
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .form__inner {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 69px;
   }
 }
 
@@ -15,7 +47,6 @@
   line-height: 36px;
   font-weight: 400;
   padding-top: 27px;
-  padding-left: 20px;
   color: #000000;
 }
 
@@ -31,7 +62,6 @@
   text-transform: uppercase;
   padding-top: 37px;
   color: #000000;
-  padding-left: 20px;
 }
 
 @media (min-width: 768px) {
@@ -45,6 +75,7 @@
   content: "";
   display: flex;
   margin: 0 auto;
+  margin-top: 25px;
   height: 1px;
   background-color: #d9d9d9;
   width: auto;
@@ -60,6 +91,7 @@
   content: "";
   display: flex;
   margin: 0 auto;
+  margin-top: 25px;
   height: 1px;
   background-color: #d9d9d9;
   width: auto;
@@ -78,27 +110,36 @@
   }
 }
 
+.form__submit-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
 .form__button {
   display: grid;
+  margin: 0 auto;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   border: none;
-  padding: 14px 74px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
   min-width: 280px;
-  min-height: 40px;
-  margin: 0 auto;
   cursor: pointer;
 }
 
 @media (min-width: 768px) {
   .form__button {
+    display: inline-block;
     min-width: 282px;
     min-height: 52px;
+    line-height: 26px;
+    padding-top: 13px;
+    padding-bottom: 13px;
   }
 }
 
@@ -113,5 +154,4 @@
   text-align: center;
   padding-top: 21px;
   color: #000000;
-  padding-bottom: 32px;
 }
