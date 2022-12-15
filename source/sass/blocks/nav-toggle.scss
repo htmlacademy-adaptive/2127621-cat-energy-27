@@ -1,6 +1,13 @@
 .nav-toggle {
-  padding: 24px;
-  //border: none;
-  background-color: #ffffff;
+  width: 65px;
+  height: 65px;
+  background: url("../img/logo-mobile-burger.svg") center no-repeat;
+  border: none;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .nav-toggle {
+    display: none;
+  }
 }

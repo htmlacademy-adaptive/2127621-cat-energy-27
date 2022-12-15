@@ -1,6 +1,19 @@
 .program-selection {
   border-style: none;
   padding: 0;
+  padding-top: 25px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .program-selection {
+    padding-top: 66px;
+  }
+}
+
+.program-selection__list {
+  list-style-type: none;
+  padding: 0;
   margin: 0;
 }
 

@@ -1,25 +1,66 @@
-.products-card:not(:last-child) {
+.products-card {
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 2fr) 1fr;
-  margin-bottom: 44px;
+  padding-bottom: 44px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .products-card:last-child {
   margin-bottom: 0;
 }
 
-//серая линия
-/*.products-card::after {
+@media (min-width: 768px) {
+  .products-card {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    position: relative;
+    width: 324px;
+  }
+}
+
+@media (min-width: 768px) {
+  .products-card {
+    width: 245px;
+  }
+}
+
+.products-card::after {
   content: "";
+  display: flex;
   position: absolute;
-  top: 170px;
-  left: -40px;
+  top: 220px;
+  left: -20px;
   height: 1px;
   background-color: #d9d9d9;
-  width: 320px;
-}*/
+  width: calc(100% + 40px);
+}
+
+@media (min-width: 768px) {
+  .products-card::after {
+    display: none;
+  }
+}
+
+/*смещение картинки вверх*/
+@media (min-width: 768px) {
+  .products-card__image {
+    position: relative;
+  }
+}
+
+/*смещение картинки вверх*/
+@media (min-width: 1440px) {
+  .products-card__image {
+    position: relative;
+  }
+}
 
 .products-card__title {
   font-family: "Oswald", sans-serif;
@@ -32,6 +73,8 @@
 
 .products-card__link--picture {
   grid-row: 1 / 3;
+  width: 84px;
+  margin: auto;
 }
 
 .products-card__link--title {
@@ -42,14 +85,31 @@
   grid-column: 1 / 3;
   grid-row: 3 / 4;
   display: flex;
+  box-sizing: border-box;
+  justify-content: center;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   border: none;
-  padding: 14px 74px;
+  width: 280px;
+  padding: 10px 10px;
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
   margin: 0 auto;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .products-card__link--button {
+    width: 248px;
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .products-card__link--button {
+    width: 148px;
+    padding: 10px 10px;
+  }
 }

@@ -1,11 +1,36 @@
 .personal-data {
   border-style: none;
   padding: 0;
+  padding-top: 39px;
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .personal-data {
+    padding-top: 66px;
+  }
+}
+
+.personal-data__wrapper {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .personal-data__wrapper {
+    display: grid;
+  }
+}
+
+@media (min-width: 1440px) {
+  .personal-data__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .personal-data__group {
-  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .personal-data__name {
@@ -18,21 +43,50 @@
   border: 1px solid #e7e7e7;
 }
 
+.personal-data__email-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 1440px) {
+  .personal-data__email-wrapper {
+    width: 569px;
+  }
+}
+
+.personal-data__phone-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 1440px) {
+  .personal-data__phone-wrapper {
+    width: 572px;
+  }
+}
+
 .personal-data__contacts-title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
-  padding-left: 20px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .personal-data__contacts-title {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .personal-data__contacts-name {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
-  padding-left: 20px;
 }
 
 .personal-data__contacts-description {
-  border: 1px solid #e7e7e7;
+  margin-left: 10px;
+  border: 1px solid #cdcdcd;
 }
