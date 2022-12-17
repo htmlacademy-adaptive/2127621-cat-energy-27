@@ -27,6 +27,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .nav__list-item {
+    z-index: 2;
+  }
+}
+
 .nav__list-item {
   text-align: center;
   display: block;
@@ -64,7 +70,6 @@
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
-    text-shadow: 1px 1px #000000;
   }
 }
 

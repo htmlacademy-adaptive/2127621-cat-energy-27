@@ -15,3 +15,15 @@ window.onclick = function(event) {
     }
   }
 }
+
+let navToggle = document.querySelector('.nav-toggle');
+
+navToggle.addEventListener('click', function () {
+  if (navToggle.classList.contains('nav-toggle--close')) {
+    navToggle.classList.remove('nav-toggle--close');
+    navToggle.classList.add('nav-toggle--opened');
+  } else {
+    navToggle.classList.add('nav-toggle--close');
+    navToggle.classList.remove('nav-toggle--opened');
+  }
+});

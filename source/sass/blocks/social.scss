@@ -1,4 +1,5 @@
 .social {
+  position: relative;
   display: flex;
   justify-content: space-around;
   margin: 0;
@@ -6,12 +7,31 @@
   list-style-type: none;
 }
 
-//серая полоска
-//.social::after {
-//  content: "";
-//  display: flex;
-//  margin: 0 auto;
-//  height: 1px;
-//  background-color: #d9d9d9;
-//  width: 280px;
-//}
+.social::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  display: flex;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 100%;
+}
+
+.social::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  display: flex;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .social::before,
+  .social::after {
+    display: none;
+  }
+}

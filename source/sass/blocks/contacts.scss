@@ -23,7 +23,7 @@
   .contacts__wrapper {
     position: absolute;
     top: 95px;
-    left: 110px;
+    right: calc(50% + 45px);
     z-index: 3;
     width: 505px;
     height: 198px;
