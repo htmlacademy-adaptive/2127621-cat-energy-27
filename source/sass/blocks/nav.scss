@@ -57,6 +57,14 @@
   color: #000000;
 }
 
+.nav__list-link:not(.nav__list-link--current):hover {
+  opacity: 0.6;
+}
+
+.nav__list-link:not(.nav__list-link--current):active {
+  opacity: 0.3;
+}
+
 @media (min-width: 768px) {
   .nav__list-link {
     font-weight: 400;
@@ -73,6 +81,10 @@
   }
 }
 
+.nav__list-link--another-color {
+  color: #000000;
+}
+
 @media (min-width: 768px) {
   .nav__list-link--current::after {
     display: flex;
@@ -86,10 +98,9 @@
 }
 
 @media (min-width: 1440px) {
-  .nav__list-link--current::after {
+  .nav__list-link--current:not(.nav__list-link--another-strip)::after {
     margin-top: 8px;
     background-color: #ffffff;
-    box-shadow: 1px 1px #000000;
   }
 }
 

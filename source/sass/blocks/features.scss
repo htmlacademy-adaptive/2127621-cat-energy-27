@@ -212,6 +212,10 @@
   padding-left: 19px;
 }
 
+.features__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 768px) {
   .features__link {
     font-size: 20px;
@@ -221,12 +225,16 @@
   }
 }
 
-.features__link--icon {
+.features__link-icon {
   margin-left: 15px;
 }
 
+.features__link-icon:active {
+  //color: rgba(0, 0, 0, 0.3);
+}
+
 @media (min-width: 768px) {
-  .features__link--icon {
+  .features__link-icon {
     margin-left: 25px;
   }
 }

@@ -4,6 +4,7 @@
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
+  background: #424242;
   background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background.png");
   background-position: center 0;
   background-repeat: no-repeat;
@@ -141,6 +142,14 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
+}
+
+.hero__link:hover {
+  background-color: #5eaa2f;
+}
+
+.hero__link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 768px) {
