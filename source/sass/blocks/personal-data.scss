@@ -11,6 +11,12 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .personal-data {
+    //width: 570px;
+  }
+}
+
 .personal-data__wrapper {
   display: grid;
 }
@@ -31,37 +37,53 @@
 .personal-data__group {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .personal-data__name {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  padding-bottom: 27px;
+  margin-right: 13px;
 }
 
 .personal-data__description {
+  flex-grow: 1;
   border: 1px solid #e7e7e7;
+  height: 45px;
+}
+
+.personal-data__description::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .personal-data__email-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 @media (min-width: 1440px) {
   .personal-data__email-wrapper {
-    width: 569px;
+    width: 570px;
   }
 }
 
 .personal-data__phone-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 @media (min-width: 1440px) {
   .personal-data__phone-wrapper {
-    width: 572px;
+    margin-left: 78px;
+    width: 570px;
   }
 }
 
@@ -84,9 +106,41 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  padding-bottom: 27px;
+  margin-right: 13px;
+}
+
+.personal-data__contacts-wrapper {
+  outline: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .personal-data__contacts-description {
-  margin-left: 10px;
-  border: 1px solid #cdcdcd;
+  flex-grow: 1;
+  height: 38px;
+  //border: 1px solid #cdcdcd;
+  border: none;
+  position: relative;
+  padding-top: 6px;
+}
+
+.personal-data__contacts-description::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 19px;
+}
+
+.personal-data__contacts-email-img {
+  padding-right: 15px;
+  opacity: 0.6;
+}
+
+.personal-data__contacts-phone-img {
+  padding-right: 15px;
+  opacity: 0.6;
 }

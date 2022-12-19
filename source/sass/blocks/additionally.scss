@@ -45,9 +45,69 @@
   margin-bottom: 20px;
 }
 
+.additionally__control {
+  position: relative;
+  display: block;
+  padding-left: 46px;
+}
+
+@media (min-width: 768px) {
+  .additionally__control {
+    padding-left: 60px;
+  }
+}
+
+.additionally__control-mark {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+@media (min-width: 768px) {
+  .additionally__control-mark {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.additionally__control:hover .additionally__control-mark {
+  border-color: #bababa;
+}
+
+.additionally__control-input:disabled + .additionally__control-mark {
+  border-color: #bababa;
+  opacity: 0.3;
+}
+
+.additionally__control-input[type="checkbox"]:checked + .additionally__control-mark::before,
+.additionally__control-input[type="checkbox"]:checked + .additionally__control-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  content: url(../../img/checkbox-active.svg);
+}
+
+@media (min-width: 768px) {
+  .additionally__control-input[type="checkbox"]:checked + .additionally__control-mark::before,
+  .additionally__control-input[type="checkbox"]:checked + .additionally__control-mark::after {
+    top: 12px;
+    left: 12px;
+  }
+}
+
 .additionally__control-label {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: #000000;
+}
+
+@media (min-width: 768px) {
+  .additionally__control-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
