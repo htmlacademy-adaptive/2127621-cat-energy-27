@@ -250,6 +250,56 @@ img {
   margin-bottom: 20px;
 }
 
+.additionally__control {
+  position: relative;
+  display: block;
+  padding-left: 46px;
+}
+
+@media (min-width: 768px) {
+  .additionally__control {
+    padding-left: 60px;
+  }
+}
+.additionally__control-mark {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+@media (min-width: 768px) {
+  .additionally__control-mark {
+    width: 40px;
+    height: 40px;
+  }
+}
+.additionally__control:hover .additionally__control-mark {
+  border-color: #bababa;
+}
+
+.additionally__control-input:disabled + .additionally__control-mark {
+  border-color: #bababa;
+  opacity: 0.3;
+}
+
+.additionally__control-input[type=checkbox]:checked + .additionally__control-mark::before,
+.additionally__control-input[type=checkbox]:checked + .additionally__control-mark::after {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  content: url(../../img/checkbox-active.svg);
+}
+
+@media (min-width: 768px) {
+  .additionally__control-input[type=checkbox]:checked + .additionally__control-mark::before,
+.additionally__control-input[type=checkbox]:checked + .additionally__control-mark::after {
+    top: 12px;
+    left: 12px;
+  }
+}
 .additionally__control-label {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -257,6 +307,12 @@ img {
   color: #000000;
 }
 
+@media (min-width: 768px) {
+  .additionally__control-label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 .bonus {
   display: flex;
   flex-direction: column;
@@ -383,7 +439,8 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-left: 15px;
+  padding-left: 19px;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1056,6 +1113,7 @@ img {
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   padding-top: 37px;
+  padding-right: 20px;
   color: #000000;
 }
 
@@ -1063,6 +1121,11 @@ img {
   .form__text {
     font-size: 20px;
     line-height: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .form__personal-data {
+    width: 570px;
   }
 }
 .form__personal-data::after {
@@ -1080,6 +1143,16 @@ img {
     display: none;
   }
 }
+@media (min-width: 768px) {
+  .form__program-selection {
+    margin-top: 66px;
+  }
+}
+@media (min-width: 1440px) {
+  .form__program-selection {
+    width: 570px;
+  }
+}
 .form__program-selection::after {
   content: "";
   display: flex;
@@ -1095,17 +1168,27 @@ img {
     display: none;
   }
 }
+.form__submit-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 22px;
+}
+
 @media (min-width: 768px) {
   .form__submit-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 50%);
+    margin-top: 28px;
   }
 }
-.form__submit-wrapper {
-  width: 100%;
-  margin: 0 auto;
+@media (min-width: 1440px) {
+  .form__submit-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 32px;
+    margin-bottom: 82px;
+  }
 }
-
 .form__button {
   display: grid;
   margin: 0 auto;
@@ -1557,36 +1640,52 @@ img {
 .personal-data__group {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .personal-data__name {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  padding-bottom: 27px;
+  margin-right: 13px;
 }
 
 .personal-data__description {
+  flex-grow: 1;
   border: 1px solid #e7e7e7;
+  height: 45px;
+}
+
+.personal-data__description::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .personal-data__email-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 @media (min-width: 1440px) {
   .personal-data__email-wrapper {
-    width: 569px;
+    width: 570px;
   }
 }
 .personal-data__phone-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 @media (min-width: 1440px) {
   .personal-data__phone-wrapper {
-    width: 572px;
+    margin-left: 78px;
+    width: 570px;
   }
 }
 .personal-data__contacts-title {
@@ -1607,11 +1706,42 @@ img {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  padding-bottom: 27px;
+  margin-right: 13px;
+}
+
+.personal-data__contacts-wrapper {
+  outline: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
 .personal-data__contacts-description {
-  margin-left: 10px;
-  border: 1px solid #cdcdcd;
+  flex-grow: 1;
+  height: 38px;
+  border: none;
+  position: relative;
+  padding-top: 6px;
+}
+
+.personal-data__contacts-description::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 19px;
+}
+
+.personal-data__contacts-email-img {
+  padding-right: 15px;
+  opacity: 0.6;
+}
+
+.personal-data__contacts-phone-img {
+  padding-right: 15px;
+  opacity: 0.6;
 }
 
 .product {
@@ -1948,19 +2078,70 @@ img {
 .program-selection {
   border-style: none;
   padding: 0;
-  padding-top: 25px;
-  margin: 0;
+  padding-bottom: 25px;
 }
 
 @media (min-width: 768px) {
   .program-selection {
-    padding-top: 66px;
+    border: 1px solid #e7e7e7;
   }
 }
 .program-selection__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.program-selection__item {
+  margin-top: 24px;
+}
+
+.program-selection__control {
+  position: relative;
+  display: block;
+  padding-left: 45px;
+}
+
+@media (min-width: 768px) {
+  .program-selection__control {
+    padding-left: 88px;
+  }
+}
+.program-selection__mark-radio {
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+@media (min-width: 768px) {
+  .program-selection__mark-radio {
+    left: 28px;
+  }
+}
+.program-selection__control:hover .program-selection__mark-radio {
+  border-color: #bababa;
+}
+
+.program-selection__control:disabled + .program-selection__mark-radio {
+  opacity: 0.3;
+}
+
+.program-selection__input[type=radio] + .program-selection__mark-radio {
+  border-radius: 50%;
+}
+
+.program-selection__input[type=radio]:checked + .program-selection__mark-radio::before {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 13px;
+  height: 13px;
+  background-color: #68b738;
+  border-radius: 50%;
+  content: "";
 }
 
 .program-selection__control-label {
