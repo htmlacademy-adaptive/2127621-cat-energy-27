@@ -4,7 +4,11 @@
   //position: relative;
   width: 280px;
   height: 290px;
-  background-color: rgba(104, 183, 56, 0.85);
+  //background-color: rgba(104, 183, 56, 0.85);
+  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../../img/bonus-background.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0 auto;
   margin-top: 35px;
 }
