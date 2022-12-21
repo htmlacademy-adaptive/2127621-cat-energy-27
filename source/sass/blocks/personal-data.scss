@@ -54,6 +54,18 @@
   height: 45px;
 }
 
+.personal-data__description:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.personal-data__description:focus {
+  border: 2px solid #444444;
+}
+
+.personal-data__description:invalid {
+  //border: 2px solid #ff8282;
+}
+
 .personal-data__description::placeholder {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
@@ -118,13 +130,25 @@
   flex-grow: 1;
 }
 
+.personal-data__contacts-wrapper:hover {
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.personal-data__contacts-wrapper:focus {
+  border: 2px solid #444444;
+}
+
 .personal-data__contacts-description {
   flex-grow: 1;
   height: 38px;
-  //border: 1px solid #cdcdcd;
   border: none;
   position: relative;
   padding-top: 6px;
+}
+
+.personal-data__contacts-description:invalid {
+  //border: 2px solid #ff8282;
 }
 
 .personal-data__contacts-description::placeholder {

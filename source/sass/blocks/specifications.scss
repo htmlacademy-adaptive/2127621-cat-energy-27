@@ -2,27 +2,8 @@
   grid-row: 2 / 3;
 }
 
-.specifications__name,
-.specifications__description {
-  display: inline;
-  font-size: 12px;
-  line-height: 16px;
-  padding: 0;
-  margin: 0;
-}
-
-.specifications__description {
-  text-align: end;
-}
-
-@media (min-width: 768px) {
-  .specifications__name,
-  .specifications__description {
-    font-size: 16px;
-  }
-}
-
 .specifications__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -36,23 +17,32 @@
   }
 }
 
-.specifications__list {
+.specifications__list-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   width: 140px;
-  margin: 0;
+  //margin: 13px 0 15px 0;
 }
 
 @media (min-width: 768px) {
-  .specifications__list {
+  .specifications__list-wrapper {
     width: 248px;
+    margin: 0;
   }
 }
 
 @media (min-width: 1440px) {
-  .specifications__list {
+  .specifications__list-wrapper {
     width: 148px;
+  }
+}
+
+@media (min-width: 768px) {
+  .specifications__list-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -75,6 +65,7 @@
 }
 
 .specifications__link {
+  position: relative;
   display: flex;
   justify-content: center;
   font-family: "Oswald", sans-serif;
@@ -86,7 +77,7 @@
   color: #ffffff;
   background-color: #68b738;
   margin: 0 auto;
-  width: 280px;
+  //width: 280px;
   cursor: pointer;
 }
 
@@ -101,5 +92,42 @@
   .specifications__link {
     width: 244px;
     margin: 0;
+    margin-left: 40px;
+  }
+}
+
+.specifications__link::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 280px;
+}
+
+@media (min-width: 768px) {
+  .specifications__link::after {
+    display: none;
+  }
+}
+
+.specifications__name,
+.specifications__description {
+  display: inline;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.specifications__description {
+  text-align: end;
+}
+
+@media (min-width: 768px) {
+  .specifications__name,
+  .specifications__description {
+    font-size: 16px;
   }
 }

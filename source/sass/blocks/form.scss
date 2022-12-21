@@ -179,6 +179,14 @@
   }
 }
 
+.form__button:hover {
+  background-color: #5eaa2f;
+}
+
+.form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .form__submit {
   line-height: 16px;
   text-align: center;

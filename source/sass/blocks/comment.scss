@@ -32,6 +32,14 @@
   margin-top: 37px;
 }
 
+.comment__text:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.comment__text:focus {
+  border: 2px solid #444444;
+}
+
 @media (min-width: 768px) {
   .comment__text {
     margin-top: 75px;
