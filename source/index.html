@@ -19,21 +19,23 @@
         <a class="header__logo logo logo--text" href="#">
           <img class="logo__image logo__image--text" src="img/logotype-text.svg" width="101" height="18" alt="Кэт энерджи.">
         </a>
-        <nav class="nav">
-          <button class="nav-toggle nav-toggle--close" type="button" onclick="myFunction()">
+        <nav class="nav nav--nojs">
+          <button class="nav-toggle nav-toggle--closed" type="button" onclick="myFunction()">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="nav__list" id="myDropdown">
-            <li class="nav__list-item">
-              <a class="nav__list-link nav__list-link--current" aria-current="page">Главная</a>
-            </li>
-            <li class="nav__list-item">
-              <a class="nav__list-link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="nav__list-item">
-              <a class="nav__list-link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+          <div class="nav__wrapper">
+            <ul class="nav__list nav__list--opened" id="myDropdown">
+              <li class="nav__list-item">
+                <a class="nav__list-link nav__list-link--current" aria-current="page">Главная</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -183,7 +185,7 @@
       </div>
     </footer>
   </div>
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

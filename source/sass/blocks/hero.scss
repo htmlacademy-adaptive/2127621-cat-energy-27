@@ -4,11 +4,10 @@
   margin: 0 auto;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
-  background: #424242;
-  background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background.png");
+  background: #4d4d4d;
+  background-image: linear-gradient(to right, rgba(77, 170, 22, 0.85) 25%, rgba(105, 183, 56, 0.85)), url("../img/hero-background.png");
   background-position: center 0;
   background-repeat: no-repeat;
-  //background-size: cover;
   z-index: 1;
   text-align: center;
 }
