@@ -20,21 +20,23 @@
         <a class="header__logo logo logo--text" href="#">
         <img class="logo__image logo__image--text" src="img/logotype-text.svg" width="101" height="18" alt="Кэт энерджи.">
         </a>
-        <nav class="nav">
+        <nav class="nav nav--nojs">
           <button class="nav-toggle nav-toggle--close" type="button" onclick="myFunction()">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="nav__list" id="myDropdown">
-            <li class="nav__list-item">
-              <a class="nav__list-link nav__list-link--another-color" href="index.html">Главная</a>
-            </li>
-            <li class="nav__list-item">
-              <a class="nav__list-link nav__list-link--another-color nav__list-link--another-strip" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="nav__list-item">
-              <a class="nav__list-link nav__list-link--current nav__list-link--another-color nav__list-link--another-strip" aria-current="page">Подбор программы</a>
-            </li>
-          </ul>
+          <div class="nav__wrapper">
+            <ul class="nav__list nav__list--closed" id="myDropdown">
+              <li class="nav__list-item">
+                <a class="nav__list-link nav__list-link--another-color" href="index.html">Главная</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link nav__list-link--another-color nav__list-link--another-strip" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="nav__list-item">
+                <a class="nav__list-link nav__list-link--current nav__list-link--another-color nav__list-link--another-strip" aria-current="page">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -44,50 +46,54 @@
         <p class="form__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <div class="form__inner">
           <fieldset class="form__personal-data personal-data">
-            <legend class="visually-hidden">Личные данные усатого любимца</legend>
-            <p class="personal-data__group">
-              <label class="personal-data__name" for="cat-name">Имя:*</label>
-              <input class="personal-data__description" type="text" value="" id="cat-name" name="cat-name" placeholder="Барсик" required>
-            </p>
-            <p class="personal-data__group">
-              <label class="personal-data__name" for="cat-weight">Вес (кг):*</label>
-              <input class="personal-data__description" type="number" value="" id="cat-weight" name="cat-weight" placeholder="7" required>
-            </p>
-            <p class="personal-data__group">
-              <label class="personal-data__name" for="cat-age">Возраст&nbsp;(лет):*</label>
-              <input class="personal-data__description" type="number" value="" id="cat-age" name="cat-age" placeholder="7" required>
-            </p>
+            <div class="personal-data__wrapper">
+              <legend class="visually-hidden">Личные данные усатого любимца</legend>
+              <p class="personal-data__group">
+                <label class="personal-data__name" for="cat-name">Имя:*</label>
+                <input class="personal-data__description" type="text" value="" id="cat-name" name="cat-name" placeholder="Барсик" required>
+              </p>
+              <p class="personal-data__group">
+                <label class="personal-data__name" for="cat-weight">Вес (кг):*</label>
+                <input class="personal-data__description" type="number" value="" id="cat-weight" name="cat-weight" placeholder="7" required>
+              </p>
+              <p class="personal-data__group">
+                <label class="personal-data__name" for="cat-age">Возраст&nbsp;(лет):*</label>
+                <input class="personal-data__description" type="number" value="" id="cat-age" name="cat-age" placeholder="7" required>
+              </p>
+            </div>
           </fieldset>
           <fieldset class="form__program-selection program-selection">
+            <div class="program-selection__wrapper">
               <legend class="visually-hidden">Подбор программы для усатого любимца</legend>
               <ul class="program-selection__list">
                 <li class="program-selection__item">
-                  <label class="program-selection__control">
-                    <input class="program-selection__input visually-hidden" type="radio" name="product-group" value="weight loss" checked>
-                    <span class="program-selection__mark-radio"></span>
-                    <span class="program-selection__control-label">Похудение</span>
-                  </label>
+                    <label class="program-selection__control">
+                      <input class="program-selection__input visually-hidden" type="radio" name="product-group" value="weight loss" checked>
+                      <span class="program-selection__mark-radio"></span>
+                      <span class="program-selection__control-label">Похудение</span>
+                    </label>
                 </li>
                 <li class="program-selection__item">
-                  <label class="program-selection__control">
-                    <input class="program-selection__input visually-hidden" type="radio" name="product-group" value="weight gain">
-                    <span class="program-selection__mark-radio"></span>
-                    <span class="program-selection__control-label">Набор массы</span>
-                  </label>
+                    <label class="program-selection__control">
+                      <input class="program-selection__input visually-hidden" type="radio" name="product-group" value="weight gain">
+                      <span class="program-selection__mark-radio"></span>
+                      <span class="program-selection__control-label">Набор массы</span>
+                    </label>
                 </li>
                 <li class="program-selection__item">
-                  <label class="program-selection__control">
-                    <input class="program-selection__input visually-hidden" type="radio" name="product-group" value="I dnt know (need advice)">
-                    <span class="program-selection__mark-radio"></span>
-                    <span class="program-selection__control-label">Не знаю (нужен Ваш совет)</span>
-                  </label>
+                    <label class="program-selection__control">
+                      <input class="program-selection__input visually-hidden" type="radio" name="product-group" value="I dnt know (need advice)">
+                      <span class="program-selection__mark-radio"></span>
+                      <span class="program-selection__control-label">Не знаю (нужен Ваш совет)</span>
+                    </label>
                 </li>
               </ul>
+            </div>
           </fieldset>
         </div>
         <fieldset class="form__personal-contacts personal-data">
             <legend class="personal-data__contacts-title">Контактные данные (владельца&nbsp;кота)</legend>
-            <div class="personal-data__wrapper">
+            <div class="personal-data__wrapper personal-data__contacts--wrapper">
               <div class="personal-data__email-wrapper">
                 <label class="personal-data__contacts-name" for="email">E-mail:*</label>
                 <div class="personal-data__contacts-wrapper">
@@ -109,45 +115,45 @@
             </div>
         </fieldset>
         <fieldset class="form__comment comment">
-            <label class="comment__title" for="comment-field">Комментарий</label>
-            <textarea class="comment__text" name="comment" cols="34" rows="6" placeholder="Расскажите обо всех повадках кота" title="Напишите нам о своём усатом любимце" id="comment-field"></textarea>
+          <label class="comment__title" for="comment-field">Комментарий</label>
+          <textarea class="comment__text" name="comment" cols="34" rows="10" placeholder="Расскажите обо всех повадках кота" title="Напишите нам о своём усатом любимце" id="comment-field"></textarea>
         </fieldset>
         <fieldset class="form__additionally additionally">
-            <legend class="additionally__title">Дополнительно</legend>
-            <ul class="additionally__list">
-              <li class="additionally__item">
+          <legend class="additionally__title">Дополнительно</legend>
+          <ul class="additionally__list">
+            <li class="additionally__item">
                 <label class="additionally__control">
                   <input class="additionally__control-input visually-hidden" type="checkbox" name="sweetener" checked>
                   <span class="additionally__control-mark"></span>
                   <span class="additionally__control-label">Сахарозаменитель</span>
                 </label>
-              </li>
-              <li class="additionally__item">
+            </li>
+            <li class="additionally__item">
                 <label class="additionally__control">
                   <input class="additionally__control-input visually-hidden" type="checkbox" name="drinking water">
                   <span class="additionally__control-mark"></span>
                   <span class="additionally__control-label">Питьевая вода</span>
                 </label>
-              </li>
-              <li class="additionally__item">
+            </li>
+            <li class="additionally__item">
                 <label class="additionally__control">
                   <input class="additionally__control-input visually-hidden" type="checkbox" name="milk">
                   <span class="additionally__control-mark"></span>
                   <span class="additionally__control-label">Молоко</span>
                 </label>
-              </li>
-              <li class="additionally__item">
+            </li>
+            <li class="additionally__item">
                 <label class="additionally__control">
                   <input class="additionally__control-input visually-hidden" type="checkbox" name="vitamins">
                   <span class="additionally__control-mark"></span>
                   <span class="additionally__control-label">Витамины</span>
                 </label>
-              </li>
-            </ul>
-            <div class="form__submit-wrapper">
-              <button class="form__button" type="submit">Отправить заявку</button>
-              <p class="form__submit">* — Обязательные поля</p>
-            </div>
+            </li>
+          </ul>
+          <div class="form__submit-wrapper">
+            <button class="form__button" type="submit">Отправить заявку</button>
+            <p class="form__submit">* — Обязательные поля</p>
+          </div>
         </fieldset>
       </form>
     </div>
@@ -219,7 +225,7 @@
       </div>
     </footer>
   </div>
-  <script src="./js/script.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>
