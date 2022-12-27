@@ -113,6 +113,25 @@
   }
 }
 
+
+
+/*
+.form__personal-contacts {
+  position: relative;
+  width: 100%;
+}
+
+.form__personal-contacts::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  width: 100%;
+  z-index: -1;
+  height: 2px;
+  background-color: #68b738;
+}
+*/
+
 .personal-data__contacts-title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -120,6 +139,8 @@
   color: #000000;
   padding: 0;
   padding-left: 20px;
+  display: inline-block;
+  background-color: #ffffff;
 }
 
 @media (min-width: 768px) {
@@ -128,12 +149,15 @@
     line-height: 36px;
     padding-top: 75px;
     padding-left: 69px;
+    margin: 0;
   }
 }
 
 @media (min-width: 1440px) {
   .personal-data__contacts-title {
     padding-left: 0;
+    width: max-content;
+    max-width: 1220px;
   }
 }
 
