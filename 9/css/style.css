@@ -1838,7 +1838,7 @@ img {
     z-index: 1;
   }
 
-  .nav__list--closed .nav__list {
+  .nav--closed .nav__list {
     display: none;
   }
 
@@ -2088,7 +2088,7 @@ img {
   }
 }
 @media (min-width: 1440px) {
-  .personal-data__contacts--wrapper {
+  .personal-data__contacts-inner {
     flex-direction: row;
     margin-left: auto;
     width: 1220px;
