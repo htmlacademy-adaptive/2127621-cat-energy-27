@@ -1,32 +1,48 @@
 .comment {
+  position: relative;
   display: grid;
-  border-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-color: #68b738;
+  border-width: 2px;
   padding: 0;
+  padding-top: 25px;
   margin: 0;
+  //z-index: -1;
+
+  //width: 2000px;
+  overflow: visible;
 }
 
 .comment__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
+  background-color: #ffffff;
   color: #000000;
-  margin-top: 23px;
-  margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  //z-index: 2;
+  margin-top: -43px;
+  width: min-content;
 }
 
 @media (min-width: 768px) {
   .comment__title {
     font-size: 36px;
     line-height: 36px;
-    margin-top: 75px;
-    margin-left: 69px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: -50px;
+    margin-left: 30px;
   }
 }
 
 @media (min-width: 1440px) {
   .comment__title {
-    margin-top: 69px;
-    margin-left: 0;
+    margin-left: calc(50% - 650px);
   }
 }
 
@@ -56,8 +72,9 @@
 @media (min-width: 1440px) {
   .comment__text {
     margin-top: 76px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    width: 1220px;
+    margin-right: auto;
   }
 }
 

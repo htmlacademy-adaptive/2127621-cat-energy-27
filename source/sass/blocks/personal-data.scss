@@ -1,8 +1,12 @@
 .personal-data {
-  border-style: none;
+  /*border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-color: #68b738;
+  border-width: 2px;*/
   padding: 0;
   padding-top: 39px;
-  margin: 0;
+  //margin: 0;
   display: grid;
 }
 
@@ -15,7 +19,7 @@
 
 @media (min-width: 1440px) {
   .personal-data {
-    width: 570px;
+    //width: 570px;
   }
 }
 
@@ -92,6 +96,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1440px) {
@@ -104,6 +109,7 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1440px) {
@@ -113,55 +119,48 @@
   }
 }
 
-/*
-.form__personal-contacts {
-  position: relative;
-  width: 100%;
-}
-
-.form__personal-contacts::before {
-  content: "";
-  position: absolute;
-  top: 16px;
-  width: 100%;
-  z-index: -1;
-  height: 2px;
-  background-color: #68b738;
-}
-*/
-
 .personal-data__contacts-title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  background-color: #ffffff;
+  width: min-content;
   padding: 0;
   padding-left: 20px;
-  display: inline-block;
-  background-color: #ffffff;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 @media (min-width: 768px) {
   .personal-data__contacts-title {
     font-size: 36px;
     line-height: 36px;
-    padding-top: 75px;
-    padding-left: 69px;
-    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+    margin-left: 30px;
   }
 }
 
 @media (min-width: 1440px) {
   .personal-data__contacts-title {
-    padding-left: 0;
-    width: max-content;
-    max-width: 1220px;
+    margin-left: calc(50% - 650px);
+  }
+}
+
+@media (min-width: 768px) {
+  .personal-data__contacts-title-brake {
+    display: none;
   }
 }
 
 @media (min-width: 1440px) {
   .personal-data__contacts--wrapper {
     flex-direction: row;
+    margin-left: auto;
+    width: 1220px;
+    margin-right: auto;
   }
 }
 
@@ -181,6 +180,15 @@
   flex-grow: 1;
 }
 
+@media (min-width: 1440px) {
+  .personal-data__contacts-wrapper {
+    margin-left: auto;
+    max-width: 1220px;
+    margin-right: auto;
+  }
+}
+
+
 .personal-data__contacts-wrapper:hover {
   border: 1px solid #cdcdcd;
   box-sizing: border-box;
@@ -196,6 +204,7 @@
   border: none;
   position: relative;
   padding-top: 6px;
+  box-sizing: border-box;
 }
 
 .personal-data__contacts-description:invalid {
