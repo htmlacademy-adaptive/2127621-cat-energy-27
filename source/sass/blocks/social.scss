@@ -1,17 +1,56 @@
 .social {
+  position: relative;
   display: flex;
+  align-items: baseline;
   justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-//серая полоска
-//.social::after {
-//  content: "";
-//  display: flex;
-//  margin: 0 auto;
-//  height: 1px;
-//  background-color: #d9d9d9;
-//  width: 280px;
-//}
+.social__link {
+  color: #666666;
+  padding: 15px;
+}
+
+.social__link-vkontakte:hover,
+.social__link-youtube:hover,
+.social__link-telegram:hover {
+  color: #68b738;
+}
+
+.social__link-vkontakte:active,
+.social__link-youtube:active,
+.social__link-telegram:active {
+  opacity: 0.3;
+  color: #68b738;
+}
+
+.social::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  display: flex;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 100%;
+}
+
+.social::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  display: flex;
+  margin: 0 auto;
+  height: 1px;
+  background-color: #d9d9d9;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .social::before,
+  .social::after {
+    display: none;
+  }
+}

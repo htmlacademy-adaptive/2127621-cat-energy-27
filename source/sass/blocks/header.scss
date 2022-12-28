@@ -1,23 +1,28 @@
 .header {
   background-color: #ffffff;
   max-width: 1440px;
+  min-height: 65px;
   margin: 0 auto;
 }
 
 .header__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
-  min-height: 65px;
-  padding-left: 20px;
-  max-width: 1220px;
-  margin: 0 auto;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr min-content;
+  position: relative;
+  padding-top: 10px;
+  //padding-left: 20px;
+  //padding-right: 20px;
 }
 
 @media (min-width: 768px) {
   .header__wrapper {
+    display: flex;
     padding-left: 30px;
     padding-right: 30px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 

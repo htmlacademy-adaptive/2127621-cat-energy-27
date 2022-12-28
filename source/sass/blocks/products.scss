@@ -63,13 +63,29 @@
 @media (min-width: 768px) {
   .products__list {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
   }
 }
 
 @media (min-width: 1440px) {
   .products__list {
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .products__item {
+    margin-top: 141px;
+    border: 2px solid #f2f2f2;
+    width: 324px;
+  }
+}
+
+@media (min-width: 768px) {
+  .products__item {
+    width: 245px;
   }
 }

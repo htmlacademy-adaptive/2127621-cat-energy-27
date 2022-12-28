@@ -3,26 +3,30 @@
   background-color: #f2f2f2;
 }
 
-@media (min-width: 1440px) {
-  .footer__contacts {
-    margin-top: 86px;
-  }
+.footer__logo-link {
+  padding: 39px;
 }
 
 .footer__logo-link-image {
+  position: relative;
   display: block;
-  margin: 40px auto;
+  color: #111111;
+  margin: 0 auto;
 }
 
-//серая полоска
-/*.footer__logo-link::after {
-  content: "";
-  display: flex;
-  margin: 0 auto;
-  height: 1px;
-  background-color: #d9d9d9;
-  width: 280px;
-}*/
+.footer__logo-link-image:hover {
+  opacity: 0.6;
+}
+
+.footer__logo-link-image:active {
+  opacity: 0.3;
+}
+
+@media (min-width: 768px) {
+  .footer__logo-link::after {
+    display: none;
+  }
+}
 
 .footer__contacts--form {
   background-color: #f2f2f2;

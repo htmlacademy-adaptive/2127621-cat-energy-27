@@ -1,17 +1,21 @@
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
+let nav = document.querySelector('.nav');
+let navToggle = document.querySelector('.nav-toggle');
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+nav.classList.remove('nav--nojs');
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
+navToggle.addEventListener('click', function () {
+  if (nav.classList.contains('nav--closed')) {
+    nav.classList.remove('nav--closed');
+    nav.classList.add('nav__list--opened');
+  } else {
+    nav.classList.add('nav--closed');
+    nav.classList.remove('nav__list--opened');
   }
-}
+  if (navToggle.classList.contains('nav-toggle--closed')) {
+    navToggle.classList.remove('nav-toggle--closed');
+    navToggle.classList.add('nav-toggle--opened');
+  } else {
+    navToggle.classList.add('nav-toggle--closed');
+    navToggle.classList.remove('nav-toggle--opened');
+  }
+});

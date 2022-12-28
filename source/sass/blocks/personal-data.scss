@@ -1,67 +1,121 @@
 .personal-data {
-  border-style: none;
+  /*border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  border-color: #68b738;
+  border-width: 2px;*/
   padding: 0;
   padding-top: 39px;
-  margin: 0;
+  //margin: 0;
+  display: grid;
 }
 
 @media (min-width: 768px) {
   .personal-data {
     padding-top: 66px;
+    display: grid;
+  }
+}
+
+@media (min-width: 1440px) {
+  .personal-data {
+    //width: 570px;
   }
 }
 
 .personal-data__wrapper {
-  display: grid;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: 768px) {
   .personal-data__wrapper {
-    display: grid;
+    padding-left: 71px;
+    padding-right: 67px;
   }
 }
 
 @media (min-width: 1440px) {
   .personal-data__wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .personal-data__group {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  margin-top: 8px;
+}
+
+@media (min-width: 1440px) {
+  .personal-data__group:not(:first-child) {
+    margin-top: 0;
+  }
 }
 
 .personal-data__name {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  //padding-bottom: 22px;
+  margin-right: 13px;
 }
 
 .personal-data__description {
+  flex-grow: 1;
   border: 1px solid #e7e7e7;
+  height: 45px;
+}
+
+.personal-data__description:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.personal-data__description:focus {
+  border: 2px solid #444444;
+}
+
+.personal-data__description:invalid {
+  //border: 2px solid #ff8282;
+}
+
+.personal-data__description::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  padding-left: 20px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .personal-data__email-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1440px) {
   .personal-data__email-wrapper {
-    width: 569px;
+    width: 570px;
   }
 }
 
 .personal-data__phone-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1440px) {
   .personal-data__phone-wrapper {
-    width: 572px;
+    margin-left: 78px;
+    width: 570px;
   }
 }
 
@@ -70,13 +124,43 @@
   font-size: 24px;
   line-height: 26px;
   color: #000000;
+  background-color: #ffffff;
+  width: min-content;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 @media (min-width: 768px) {
   .personal-data__contacts-title {
     font-size: 36px;
     line-height: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 0;
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .personal-data__contacts-title {
+    margin-left: calc(50% - 650px);
+  }
+}
+
+@media (min-width: 768px) {
+  .personal-data__contacts-title-brake {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .personal-data__contacts-inner {
+    flex-direction: row;
+    margin-left: auto;
+    width: 1220px;
+    margin-right: auto;
   }
 }
 
@@ -84,9 +168,63 @@
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
+  padding-bottom: 27px;
+  margin-right: 13px;
+}
+
+.personal-data__contacts-wrapper {
+  outline: 1px solid #cdcdcd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+@media (min-width: 1440px) {
+  .personal-data__contacts-wrapper {
+    margin-left: auto;
+    max-width: 1220px;
+    margin-right: auto;
+  }
+}
+
+
+.personal-data__contacts-wrapper:hover {
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.personal-data__contacts-wrapper:focus {
+  border: 2px solid #444444;
 }
 
 .personal-data__contacts-description {
-  margin-left: 10px;
-  border: 1px solid #cdcdcd;
+  flex-grow: 1;
+  height: 38px;
+  border: none;
+  position: relative;
+  padding-top: 6px;
+  box-sizing: border-box;
+}
+
+.personal-data__contacts-description:invalid {
+  //border: 2px solid #ff8282;
+}
+
+.personal-data__contacts-description::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding-left: 19px;
+}
+
+.personal-data__contacts-email-img {
+  padding-right: 15px;
+  opacity: 0.6;
+}
+
+.personal-data__contacts-phone-img {
+  padding-right: 15px;
+  opacity: 0.6;
 }

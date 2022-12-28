@@ -26,3 +26,16 @@
     margin-right: 23px;
   }
 }
+
+.copyright__logo {
+  color: #666666;
+}
+
+.copyright__link:hover .copyright__logo {
+  color: #68b738;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
+  color: #68b738;
+}

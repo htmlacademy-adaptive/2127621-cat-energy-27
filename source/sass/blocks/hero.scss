@@ -1,9 +1,14 @@
 .hero {
   max-width: 1440px;
+  height: 302px;
   margin: 0 auto;
-  background: rgba(104, 183, 56, 0.85) url("../img/hero-background.png") top center no-repeat;
   font-family: "Oswald", sans-serif;
   color: #ffffff;
+  background: #4d4d4d;
+  background-image: linear-gradient(to right, rgba(77, 170, 22, 0.85) 25%, rgba(105, 183, 56, 0.85)), url("../img/hero-background.png");
+  background-position: center 0;
+  background-repeat: no-repeat;
+  z-index: 1;
   text-align: center;
 }
 
@@ -41,6 +46,21 @@
     margin-left: 80px;
     padding-left: 110px;
     padding-right: 110px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero__wrapper::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    left: 50%;
+    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background-maxsize.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
   }
 }
 
@@ -111,6 +131,7 @@
     order: 4;
     grid-row: 1 / 4;
     grid-column: 2 / 3;
+    z-index: 2;
   }
 }
 
@@ -120,6 +141,14 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: #68b738;
+}
+
+.hero__link:hover {
+  background-color: #5eaa2f;
+}
+
+.hero__link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media (min-width: 768px) {
