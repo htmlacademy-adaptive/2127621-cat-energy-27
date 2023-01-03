@@ -1,3 +1,13 @@
+@media (min-width: 1440px) {
+  .logo:hover {
+    opacity: 0.6;
+  }
+
+  .logo:active {
+    opacity: 0.3;
+  }
+}
+
 .logo--icon {
   padding-left: 20px;
   padding-bottom: 18px;
@@ -11,5 +21,9 @@
 @media (min-width: 768px) {
   .logo--text {
     padding-left: 12px;
+  }
+
+  .logo__image--text {
+    display: none;
   }
 }

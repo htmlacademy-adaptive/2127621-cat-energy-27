@@ -40,9 +40,6 @@
 
 @media (min-width: 1440px) {
   .hero__wrapper {
-    display: grid;
-    grid-template-columns: 414px 552px;
-    grid-template-rows: repeat(2, min-content);
     margin-left: 80px;
     padding-left: 110px;
     padding-right: 110px;
@@ -57,10 +54,15 @@
     height: 694px;
     top: 0;
     left: 50%;
+    background: #4d4d4d;
     background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background-maxsize.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background-maxsize@2x.jpg");
+    }
   }
 }
 
@@ -109,7 +111,6 @@
 @media (min-width: 1440px) {
   .hero__subtitle {
     text-align: left;
-    height: max-content;
   }
 }
 
@@ -123,15 +124,21 @@
   .hero__product {
     order: 4;
     justify-items: end;
+    z-index: 1;
+    position: relative;
+    top: -110px;
+    left: -55px;
   }
 }
 
 @media (min-width: 1440px) {
   .hero__product {
-    order: 4;
-    grid-row: 1 / 4;
     grid-column: 2 / 3;
+    grid-row: 1 / -1;
     z-index: 2;
+    top: 80px;
+    right: -280px;
+    position: absolute;
   }
 }
 
@@ -153,17 +160,20 @@
 
 @media (min-width: 768px) {
   .hero__link {
+    grid-row: 3 / 4;
     width: 192px;
     font-size: 20px;
     line-height: 20px;
     padding: 17px 26px;
     margin-top: 49px;
+    z-index: 2;
   }
 }
 
 @media (min-width: 1440px) {
   .hero__link {
-    height: max-content;
     margin-top: 52px;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
   }
 }

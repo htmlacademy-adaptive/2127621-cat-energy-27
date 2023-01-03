@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="/source/img/favicon.png">
+  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -14,7 +16,11 @@
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo logo logo--icon" href="index.html">
-          <img class="logo__image logo__image--icon" src="img/logotype-icon.svg" width="33" height="38" alt="Логотип.">
+          <picture>
+            <source media="(min-width: 1220px)" srcset="img/logotype-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg" width="174" height="52">
+            <img class="logo__image logo__image--icon" src="img/logotype-icon.svg" width="33" height="38" alt="Логотип.">
+          </picture>
         </a>
         <a class="header__logo logo logo--text" href="#">
           <img class="logo__image logo__image--text" src="img/logotype-text.svg" width="101" height="18" alt="Кэт энерджи.">
@@ -44,7 +50,11 @@
         <div class="hero__wrapper">
           <h1 class="hero__title">Функциональное<br> питание для котов</h1>
           <h2 class="hero__subtitle">Занялся собой? Займись котом!</h2>
-          <img class="hero__product" src="img/hero-product.png" width="282" height="270" alt="Продукт от Кэт энерджи.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/hero-product-desktop.png 1x, img/hero-product-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/hero-product-tablet.png 1x, img/hero-product-tablet@2x.png 2x">
+            <img class="hero__product" src="img/hero-product.png" srcset="img/hero-product@2x.png 2x" alt="Продукт от Кэт энерджи.">
+          </picture>
           <a class="hero__link" href="catalog.html">Подобрать программу</a>
         </div>
       </section>
@@ -112,8 +122,12 @@
             <p class="example__result">Затраты на питание:</p>
             <p class="example__result">&nbsp;15 000 руб.</p>
           </div>
-          <img class="example__result-img" src="img/example-result.png" width="280" height="256"
-            alt="Результат нашего продукта на живом примере.">
+        </div>
+        <div class="example__slider">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/example-result-tablet.png 1x, img/example-result-tablet@2x.png 2x" width="560" height="512">
+            <img class="example__result-img" src="img/example-result.png" srcset="img/example-result@2x.png 2x" width="280" height="256" alt="Результат нашего продукта на живом примере.">
+          </picture>
         </div>
       </section>
     </main>
