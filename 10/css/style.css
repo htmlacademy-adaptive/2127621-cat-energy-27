@@ -2331,6 +2331,13 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .product__item--nutrients::before {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
+}
 
 .product__item--powder::before {
   content: "";
@@ -2339,6 +2346,13 @@ img {
   background-image: url("../img/powder.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .product__item--powder::before {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
 }
 
 .product__item--functional-nutrition::before {
@@ -2349,6 +2363,13 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (min-width: 768px) {
+  .product__item--functional-nutrition::before {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
+}
 
 .product__item--changes-better::before {
   content: "";
@@ -2357,6 +2378,13 @@ img {
   background-image: url("../img/changes-better.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (min-width: 768px) {
+  .product__item--changes-better::before {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 768px) {
