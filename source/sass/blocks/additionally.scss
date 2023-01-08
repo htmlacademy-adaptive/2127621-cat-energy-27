@@ -20,10 +20,8 @@
   padding-left: 20px;
   padding-right: 20px;
   width: min-content;
-}
 
-@media (min-width: 768px) {
-  .additionally__title {
+  @media (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
     margin-left: 30px;
@@ -31,10 +29,8 @@
     padding-right: 40px;
     //margin-top: -50px;
   }
-}
 
-@media (min-width: 1440px) {
-  .additionally__title {
+  @media (min-width: 1440px) {
     margin-left: calc(50% - 650px);
   }
 }
@@ -45,17 +41,13 @@
   margin: 0;
   margin-left: 20px;
   list-style-type: none;
-}
 
-@media (min-width: 768px) {
-  .additionally__list {
+  @media (min-width: 768px) {
     grid-template-columns: repeat(2, 50%);
     margin-left: 70px;
   }
-}
 
-@media (min-width: 1440px) {
-  .additionally__list {
+  @media (min-width: 1440px) {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     margin-left: auto;
@@ -73,10 +65,8 @@
   display: block;
   padding-left: 46px;
   margin-bottom: 13px;
-}
 
-@media (min-width: 768px) {
-  .additionally__control {
+  @media (min-width: 768px) {
     padding-left: 60px;
     margin-bottom: 20px;
   }
@@ -89,10 +79,8 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
-}
 
-@media (min-width: 768px) {
-  .additionally__control-mark {
+  @media (min-width: 768px) {
     width: 40px;
     height: 40px;
   }
@@ -113,11 +101,8 @@
   top: 7px;
   left: 7px;
   content: url("../img/checkbox-active.svg");
-}
 
-@media (min-width: 768px) {
-  .additionally__control-input[type="checkbox"]:checked + .additionally__control-mark::before,
-  .additionally__control-input[type="checkbox"]:checked + .additionally__control-mark::after {
+  @media (min-width: 768px) {
     top: 12px;
     left: 12px;
   }
@@ -128,10 +113,8 @@
   font-size: 16px;
   text-transform: uppercase;
   color: #000000;
-}
 
-@media (min-width: 768px) {
-  .additionally__control-label {
+  @media (min-width: 768px) {
     font-size: 20px;
     line-height: 30px;
   }

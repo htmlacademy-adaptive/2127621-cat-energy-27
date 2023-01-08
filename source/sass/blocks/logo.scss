@@ -16,13 +16,13 @@
 .logo--text {
   margin: 0 auto;
   padding-bottom: 16px;
+
+  @media (min-width: 768px) {
+    padding-left: 12px;
+  }
 }
 
 @media (min-width: 768px) {
-  .logo--text {
-    padding-left: 12px;
-  }
-
   .logo__image--text {
     display: none;
   }

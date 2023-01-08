@@ -7,6 +7,10 @@
   position: absolute;
   top: -4px;
   right: 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .nav-toggle--closed {
@@ -15,10 +19,4 @@
   background: url("../img/logo-mobile-close.svg") center no-repeat;
   border: none;
   cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .nav-toggle {
-    display: none;
-  }
 }

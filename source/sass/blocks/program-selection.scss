@@ -2,10 +2,8 @@
   border-style: none;
   padding: 0;
   padding-bottom: 25px;
-}
 
-@media (min-width: 768px) {
-  .program-selection {
+  @media (min-width: 768px) {
     border: 1px solid #e7e7e7;
   }
 }
@@ -29,10 +27,8 @@
   position: relative;
   display: block;
   padding-left: 45px;
-}
 
-@media (min-width: 768px) {
-  .program-selection__control {
+  @media (min-width: 768px) {
     padding-left: 60px;
   }
 }
@@ -44,10 +40,8 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
-}
 
-@media (min-width: 768px) {
-  .program-selection__mark-radio {
+  @media (min-width: 768px) {
     left: 8px;
   }
 }
