@@ -11,10 +11,8 @@
   background-size: cover;
   margin: 0 auto;
   margin-top: 35px;
-}
 
-@media (min-width: 768px) {
-  .bonus {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -22,16 +20,16 @@
     height: 200px;
     margin-top: 69px;
     margin-right: 0;
+    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/bonus-background-tablet.jpg");
   }
-}
 
-@media (min-width: 1440px) {
-  .bonus {
+  @media (min-width: 1440px) {
     //justify-content: center;
     flex-direction: column;
     height: 289px;
     width: 244px;
     margin-top: 0;
+    background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/bonus-background.jpg");
   }
 }
 
@@ -47,16 +45,12 @@
   background-position: center;
   margin: 0 auto;
   margin-top: 58px;
-}
 
-@media (min-width: 768px) {
-  .bonus::before {
+  @media (min-width: 768px) {
     margin-left: 88px;
   }
-}
 
-@media (min-width: 1440px) {
-  .bonus::before {
+  @media (min-width: 1440px) {
     margin-top: 62px;
   }
 }
@@ -69,19 +63,15 @@
   padding-left: 55px;
   padding-right: 55px;
   margin-top: 58px;
-}
 
-@media (min-width: 768px) {
-  .bonus__text {
+  @media (min-width: 768px) {
     text-align: start;
     width: 161px;
     margin-top: 71px;
     margin-right: 124px;
   }
-}
 
-@media (min-width: 1440px) {
-  .bonus__text {
+  @media (min-width: 1440px) {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;

@@ -7,17 +7,13 @@
 .product__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-}
 
-@media (min-width: 768px) {
-  .product__wrapper {
+  @media (min-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
   }
-}
 
-@media (min-width: 1440px) {
-  .product__wrapper {
+  @media (min-width: 1440px) {
     padding-left: 110px;
     padding-right: 110px;
     min-height: 640px;
@@ -31,17 +27,13 @@
   line-height: 40px;
   color: #000000;
   margin-bottom: 42px;
-}
 
-@media (min-width: 768px) {
-  .product__title {
+  @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
   }
-}
 
-@media (min-width: 1440px) {
-  .product__title {
+  @media (min-width: 1440px) {
     margin-top: 60px;
     margin-bottom: 0;
   }
@@ -53,10 +45,8 @@
   padding: 0;
   padding-bottom: 49px;
   list-style-type: none;
-}
 
-@media (min-width: 768px) {
-  .product__list {
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -64,10 +54,8 @@
     grid-row-gap: 80px;
     counter-reset: index;
   }
-}
 
-@media (min-width: 1440px) {
-  .product__list {
+  @media (min-width: 1440px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
@@ -82,18 +70,14 @@
   align-items: center;
   grid-template-columns: 60px 1fr;
   grid-gap: 20px;
-}
 
-@media (min-width: 768px) {
-  .product__item {
+  @media (min-width: 768px) {
     position: relative;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
   }
-}
 
-@media (min-width: 1440px) {
-  .product__item {
+  @media (min-width: 1440px) {
     margin-top: 72px;
   }
 }
@@ -113,7 +97,6 @@
   }
 }
 
-
 .product__item:not(:last-child) {
   margin-bottom: 26px;
 }
@@ -125,6 +108,12 @@
   background-image: url("../img/nutrients.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
 }
 
 .product__item--powder::before {
@@ -134,6 +123,12 @@
   background-image: url("../img/powder.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
 }
 
 .product__item--functional-nutrition::before {
@@ -143,6 +138,12 @@
   background-image: url("../img/functional-nutrition.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
 }
 
 .product__item--changes-better::before {
@@ -152,6 +153,12 @@
   background-image: url("../img/changes-better.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 768px) {

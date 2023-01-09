@@ -39,10 +39,8 @@
 .footer__inner {
   display: flex;
   flex-direction: column;
-}
 
-@media (min-width: 768px) {
-  .footer__inner {
+  @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -50,10 +48,8 @@
     padding-right: 30px;
     padding-left: 30px;
   }
-}
 
-@media (min-width: 1440px) {
-  .footer__inner {
+  @media (min-width: 1440px) {
     width: 1220px;
     margin: 0 auto;
     padding-right: 110px;

@@ -14,20 +14,16 @@
   padding-top: 10px;
   //padding-left: 20px;
   //padding-right: 20px;
-}
 
-@media (min-width: 768px) {
-  .header__wrapper {
+  @media (min-width: 768px) {
     display: flex;
     padding-left: 30px;
     padding-right: 30px;
     max-width: 1220px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: 1440px) {
-  .header__wrapper {
+  @media (min-width: 1440px) {
     padding-left: 110px;
     padding-right: 110px;
   }
