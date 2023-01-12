@@ -13,15 +13,11 @@
   padding: 15px;
 }
 
-.social__link-vkontakte:hover,
-.social__link-youtube:hover,
-.social__link-telegram:hover {
+.social__link:hover {
   color: #68b738;
 }
 
-.social__link-vkontakte:active,
-.social__link-youtube:active,
-.social__link-telegram:active {
+.social__link:active {
   opacity: 0.3;
   color: #68b738;
 }
