@@ -19,4 +19,7 @@
         </clipPath>
       </defs>
     </symbol>
+    <symbol id="icon-arrow" class="features__link-icon" aria-hidden="true" focusable="false" width="32" height="12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path stroke="currentColor" stroke-width="2" d="M0 6h18"></path><path fill="currentColor" d="m24 6-6.75 5.196V.804L24 6Z"></path>
+    </symbol>
   </svg>
