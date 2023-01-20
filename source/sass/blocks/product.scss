@@ -1,7 +1,7 @@
 .product {
-  background-color: #ffffff;
   max-width: 1440px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .product__wrapper {
@@ -9,32 +9,35 @@
   padding-right: 20px;
 
   @media (min-width: 768px) {
+    padding-top: 13px;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   @media (min-width: 1440px) {
+    min-height: 608px;
     padding-left: 110px;
     padding-right: 110px;
-    min-height: 640px;
   }
 }
 
 .product__title {
-  font-family: "Oswald", sans-serif;
+  margin-bottom: 42px;
+  font-display: swap;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: #000000;
-  margin-bottom: 42px;
 
   @media (min-width: 768px) {
+    margin-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
   }
 
   @media (min-width: 1440px) {
-    margin-top: 60px;
+    margin-top: 29px;
     margin-bottom: 0;
   }
 }
@@ -50,8 +53,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 179px;
-    grid-row-gap: 80px;
+    grid-column-gap: 60px;
+    grid-row-gap: 115px;
     counter-reset: index;
   }
 
@@ -59,7 +62,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 100px;
+    grid-column-gap: 81px;
     align-items: start;
     padding-bottom: 0;
   }
@@ -74,31 +77,32 @@
   @media (min-width: 768px) {
     position: relative;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, min-content);
   }
 
   @media (min-width: 1440px) {
+    grid-template-rows: repeat(2, min-content);
     margin-top: 72px;
   }
 }
 
 @media (min-width: 768px) {
   .product__item::after {
+    content: counters(index, ".", decimal) " ";
     position: absolute;
-    width: 136px;
-    font-family: "Oswald", sans-serif;
-    font-size: 260px;
+    top: 90px;
+    left: 116px;
+    font-display: swap;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 280px;
     font-weight: 400;
     color: #f2f2f2;
-    top: 92px;
-    left: 118px;
     counter-increment: index;
-    content: counters(index, ".", decimal) " ";
   }
 }
 
 .product__item:not(:last-child) {
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 
 .product__item--nutrients::before {
@@ -161,10 +165,29 @@
   }
 }
 
-@media (min-width: 768px) {
-  .product__description {
+.product__description {
+  @media (min-width: 768px) {
+    z-index: 1;
+    padding-top: 10px;
+    padding-right: 80px;
     font-size: 16px;
     line-height: 24px;
-    z-index: 1;
+  }
+
+  @media (min-width: 1440px) {
+    padding-right: 0;
   }
 }
+/*
+.product__description--changes-better {
+  @media (min-width: 768px) {
+    margin-top: -26px;
+    padding-right: 82px;
+  }
+}
+  @media (min-width: 1440px) {
+
+    padding-right: 10px;
+  }
+}
+*/

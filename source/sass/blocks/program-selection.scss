@@ -1,7 +1,7 @@
 .program-selection {
-  border-style: none;
   padding: 0;
-  padding-bottom: 25px;
+  //padding-bottom: 25px;
+  border-style: none;
 
   @media (min-width: 768px) {
     border: 1px solid #e7e7e7;
@@ -14,13 +14,26 @@
 }
 
 .program-selection__list {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: 768px) {
+    padding-top: 30px;
+  }
 }
 
 .program-selection__item {
-  margin-top: 24px;
+  margin-top: 21px;
+
+  @media (min-width: 768px) {
+    margin-top: 0;
+    padding-bottom: 23px;
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 25px;
+  }
 }
 
 .program-selection__control {
@@ -29,7 +42,7 @@
   padding-left: 45px;
 
   @media (min-width: 768px) {
-    padding-left: 60px;
+    padding-left: 68px;
   }
 }
 
@@ -37,12 +50,14 @@
   position: absolute;
   top: -7px;
   left: 0;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #cdcdcd;
 
   @media (min-width: 768px) {
     left: 8px;
+    width: 39px;
+    height: 39px;
   }
 }
 
@@ -60,18 +75,31 @@
 
 .program-selection__input[type="radio"]:checked + .program-selection__mark-radio::before {
   position: absolute;
-  top: 9px;
-  left: 9px;
+  content: "";
+  top: 7px;
+  left: 8px;
   width: 13px;
   height: 13px;
   background-color: #68b738;
   border-radius: 50%;
-  content: "";
+
+  @media (min-width: 768px) {
+    top: 10px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .program-selection__control-label {
-  font-family: "Oswald", sans-serif;
+  font-display: swap;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   color: #222222;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

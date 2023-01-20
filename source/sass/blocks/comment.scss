@@ -1,39 +1,38 @@
 .comment {
   position: relative;
   display: grid;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  overflow: visible;
   border-right-style: none;
   border-bottom-style: none;
   border-left-style: none;
   border-color: #68b738;
   border-width: 2px;
-  padding: 0;
-  padding-top: 25px;
-  margin: 0;
-  //z-index: -1;
-  //width: 2000px;
-  overflow: visible;
 }
 
 .comment__title {
   position: relative;
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-  line-height: 26px;
-  background-color: #ffffff;
-  color: #000000;
+  width: max-content;
+  max-width: 1220px;
+  margin-top: -43px;
   padding-left: 20px;
   padding-right: 20px;
-  //z-index: 2;
-  margin-top: -43px;
-  width: min-content;
+  font-display: swap;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
 
   @media (min-width: 768px) {
-    font-size: 36px;
-    line-height: 36px;
-    padding-left: 40px;
-    padding-right: 40px;
     margin-top: -50px;
     margin-left: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: 1440px) {
@@ -42,42 +41,49 @@
 }
 
 .comment__text {
-  border: 1px solid #e7e7e7;
-  margin-top: 37px;
+  margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  outline: 1px solid #e7e7e7;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
-    margin-top: 75px;
+    min-height: 174px;
+    margin-top: 65px;
     margin-left: 70px;
     margin-right: 67px;
   }
 
   @media (min-width: 1440px) {
-    margin-top: 76px;
-    margin-left: auto;
     width: 1220px;
+    margin-top: 60px;
+    margin-left: auto;
     margin-right: auto;
   }
 }
 
 .comment__text:hover {
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
+  box-sizing: border-box;
 }
 
 .comment__text:focus {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
+  box-sizing: border-box;
 }
 
 .comment__text::placeholder {
-  font-family: "Oswald", sans-serif;
+  padding-top: 7px;
+  padding-left: 12px;
+  font-display: swap;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding-left: 15px;
-  padding-top: 10px;
 
   @media (min-width: 768px) {
+    padding-top: 7px;
+    padding-left: 15px;
     font-size: 20px;
     line-height: 30px;
   }
