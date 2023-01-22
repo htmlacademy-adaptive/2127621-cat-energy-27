@@ -3,7 +3,6 @@
   max-width: 1440px;
   height: min-content;
   margin: 0 auto;
-  font-display: swap;
   font-family: "Oswald", "Arial", sans-serif;
   text-align: center;
   color: #ffffff;
@@ -42,7 +41,6 @@
 
   @media (min-width: 768px) {
     display: grid;
-    //margin-left: 87px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -61,12 +59,14 @@
     top: 0;
     left: 50%;
     z-index: 1;
-    width: 100%;
+    width: 50%;
     height: 694px;
     background: #4d4d4d;
     background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background-maxsize.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: left;
+    background-size: cover;
+    overflow: hidden;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background-maxsize@2x.jpg");

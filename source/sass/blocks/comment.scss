@@ -19,7 +19,6 @@
   margin-top: -43px;
   padding-left: 20px;
   padding-right: 20px;
-  font-display: swap;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
@@ -44,9 +43,8 @@
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-top: 7px;
-  padding-left: 12px;
-  font-display: swap;
+  padding-top: 10px;
+  padding-left: 13px;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -56,8 +54,8 @@
   resize: vertical;
 
   @media (min-width: 768px) {
-    min-height: 174px;
-    margin-top: 65px;
+    height: 174px;
+    margin-top: 60px;
     margin-left: 70px;
     margin-right: 67px;
     padding-top: 7px;

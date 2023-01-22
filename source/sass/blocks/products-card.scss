@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     width: 248px;
     min-height: 352px;
     margin-top: 141px;
@@ -64,7 +64,6 @@
 .products-card__title {
   padding-top: 23px;
   padding-right: 64px;
-  font-display: swap;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -127,7 +126,6 @@
   margin: 0 auto;
   margin-top: 7px;
   padding: 10px 10px;
-  font-display: swap;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
