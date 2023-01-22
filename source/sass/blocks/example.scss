@@ -219,13 +219,11 @@
   justify-content: center;
   position: relative;
   --position: 50%;
-
   margin-top: 20px;
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-
-  border: 1px solid #000000;
+  //border: 1px solid #000000;
 
   @media (min-width: 1440px) {
     top: -550px;
@@ -257,12 +255,12 @@
   //inset: 0;
   //width: var(--position);
   object-position: left;
-  border: 1px solid rgb(0, 0, 0);
+  //border: 1px solid rgb(0, 0, 0);
 }
 
 .example__result-after {
   object-position: right;
-  border: 1px solid rgb(255, 0, 0);
+  //border: 1px solid rgb(255, 0, 0);
 }
 
 .example__slider-range {
