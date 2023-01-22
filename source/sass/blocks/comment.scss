@@ -44,14 +44,26 @@
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 7px;
+  padding-left: 12px;
+  font-display: swap;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
   outline: 1px solid #e7e7e7;
   box-sizing: border-box;
+  resize: vertical;
 
   @media (min-width: 768px) {
     min-height: 174px;
     margin-top: 65px;
     margin-left: 70px;
     margin-right: 67px;
+    padding-top: 7px;
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: 1440px) {
@@ -70,21 +82,4 @@
 .comment__text:focus {
   outline: 2px solid #444444;
   box-sizing: border-box;
-}
-
-.comment__text::placeholder {
-  padding-top: 7px;
-  padding-left: 12px;
-  font-display: swap;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-
-  @media (min-width: 768px) {
-    padding-top: 7px;
-    padding-left: 15px;
-    font-size: 20px;
-    line-height: 30px;
-  }
 }

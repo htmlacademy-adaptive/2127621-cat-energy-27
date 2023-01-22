@@ -65,6 +65,11 @@
   border-color: #bababa;
 }
 
+.program-selection__input[type="radio"]:focus + span {
+  border-color: #444444;
+  outline: 1px solid #444444;
+}
+
 .program-selection__control:disabled + .program-selection__mark-radio {
   opacity: 0.3;
 }

@@ -33,7 +33,8 @@
   color: #666666;
 }
 
-.copyright__link:hover .copyright__logo {
+.copyright__link:hover .copyright__logo,
+.copyright__link:focus .copyright__logo {
   color: #68b738;
 }
 

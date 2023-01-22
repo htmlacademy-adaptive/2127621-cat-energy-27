@@ -30,7 +30,8 @@
   margin-left: -6px;
 }
 
-.social__link:hover {
+.social__link:hover,
+.social__link:focus {
   color: #68b738;
 }
 

@@ -61,12 +61,12 @@
     top: 0;
     left: 50%;
     z-index: 1;
-    width: 50%;
+    width: 100%;
     height: 694px;
     background: #4d4d4d;
     background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background-maxsize.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
     @media (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(105, 183, 56, 0.85), rgba(105, 183, 56, 0.85)), url("../img/hero-background-maxsize@2x.jpg");

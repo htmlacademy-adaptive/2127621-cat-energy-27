@@ -19,7 +19,7 @@
         </clipPath>
       </defs>
     </symbol>
-    <symbol id="icon-arrow" class="features__link-icon"  aria-hidden="true" focusable="false" width="32" height="12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="icon-arrow" class="features__link-icon" aria-hidden="true" focusable="false" width="32" height="12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
       <path stroke="currentColor" stroke-width="2" d="M0 6h18"></path><path fill="currentColor" d="m24 6-6.75 5.196V.804L24 6Z"></path>
     </symbol>
     <symbol id="contacts-email" class="personal-data__contacts-email-img" aria-hidden="true" focusable="false" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,5 +31,14 @@
     <symbol id="logotype-text-footer-mobile" class="footer__logo-link-image" aria-hidden="true" focusable="false" width="129" height="24" viewBox="0 0 129 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
     </symbol>
     <symbol id="logotype-text-footer-tablet" class="footer__logo-link-image" aria-hidden="true" focusable="false" width="142" height="26" viewBox="0 0 142 26" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    </symbol>
+    <symbol id="slider-button" class="example__slider-button" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="40" height="258" fill="currentColor">
+      <path width="40" height="258" viewBox="0 0 40 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="18" width="4" height="257.02" rx="2" fill="#666666"/>
+        <rect x="1" y="110" width="38" height="38" rx="19" fill="white"/>
+        <path d="M16 120L8 129L16 138V120Z" fill="#666666"/>
+        <path d="M32 129L24 120V138L32 129Z" fill="#666666"/>
+        <rect x="1" y="110" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
+      </path>
     </symbol>
   </svg>

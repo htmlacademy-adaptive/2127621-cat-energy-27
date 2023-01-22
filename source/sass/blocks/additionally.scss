@@ -103,6 +103,11 @@
   border-color: #bababa;
 }
 
+.additionally__control-input[type="checkbox"]:focus + span {
+  border-color: #444444;
+  outline: 1px solid #444444;
+}
+
 .additionally__control-input:disabled + .additionally__control-mark {
   border-color: #bababa;
   opacity: 0.3;

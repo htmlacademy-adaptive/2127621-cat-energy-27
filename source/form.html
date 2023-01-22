@@ -8,9 +8,9 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="images/favicons/apple.png">
-  <link rel="manifest" href="source/manifest.webmanifest">
-  <link rel="preload" href="source/fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="source/fonts/lato/oswald-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -24,7 +24,7 @@
             <img class="logo__image logo__image--icon" src="img/logotype-icon.svg" width="33" height="38" alt="Логотип.">
           </picture>
         </a>
-        <a class="header__logo logo logo--text" href="#">
+        <a class="header__logo logo logo--text" href="#" tabindex="-1">
           <img class="logo__image logo__image--text" src="img/logotype-text.svg" width="101" height="18" alt="Кэт энерджи.">
         </a>
         <nav class="nav nav--closed nav--nojs">
@@ -174,11 +174,11 @@
           <div class="contacts__map-wrapper">
             <a class="contacts__link" href="https://goo.gl/maps/569WVzsEwXHTvs1K8">
               <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/location-desktop.webp 1x, img/location-desktop@2x.webp 2x" width="1440" height="400" alt="Мы находимся здесь.">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp 1x, img/location-tablet@2x.webp 2x" width="768" height="400" alt="Мы находимся здесь.">
-                <source type="image/webp" srcset="img/location.webp 1x, img/hero-product@2x.webp 2x" width="320" height="362" alt="Мы находимся здесь.">
-                <source media="(min-width: 1440px)" srcset="img/location-desktop.jpg 1x, img/location-desktop@2x.jpg 2x" width="1440" height="400" alt="Мы находимся здесь.">
-                <source media="(min-width: 768px)" srcset="img/location-tablet.jpg 1x, img/location-tablet@2x.jpg 2x" width="768" height="400" alt="Мы находимся здесь.">
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/location-desktop.webp 1x, img/location-desktop@2x.webp 2x" width="1440" height="400">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp 1x, img/location-tablet@2x.webp 2x" width="768" height="400">
+                <source type="image/webp" srcset="img/location.webp 1x, img/hero-product@2x.webp 2x" width="320" height="362">
+                <source media="(min-width: 1440px)" srcset="img/location-desktop.jpg 1x, img/location-desktop@2x.jpg 2x" width="1440" height="400">
+                <source media="(min-width: 768px)" srcset="img/location-tablet.jpg 1x, img/location-tablet@2x.jpg 2x" width="768" height="400">
                 <img class="contacts__image" src="img/location.jpg" width="320" height="362" alt="Мы находимся здесь.">
               </picture>
             </a>
@@ -238,6 +238,7 @@
   </div>
   <script src="js/script.js"></script>
   <script src="js/webp.js"></script>
+  <script src="js/maps.js"></script>
 </body>
 
 </html>
