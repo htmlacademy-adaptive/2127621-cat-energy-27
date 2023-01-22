@@ -225,7 +225,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  border: 1px solid black;
+  border: 1px solid #000000;
 
   @media (min-width: 1440px) {
     top: -550px;
@@ -245,13 +245,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .example__result-img {
   display: block;
   max-width: 100%;
-
 }
 
 .example__result-before {
@@ -259,15 +257,12 @@
   //inset: 0;
   //width: var(--position);
   object-position: left;
-
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
 }
 
 .example__result-after {
   object-position: right;
-
-  border: 1px solid red;
-
+  border: 1px solid rgb(255, 0, 0);
 }
 
 .example__slider-range {
