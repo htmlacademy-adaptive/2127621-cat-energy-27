@@ -164,6 +164,9 @@
 }
 
 .product__description {
+  padding-bottom: 3px;
+  margin-left: 2px;
+
   @media (min-width: 768px) {
     z-index: 1;
     padding-top: 10px;
