@@ -36,8 +36,15 @@ img {
   overflow: hidden;
 }
 
-//*,
-//*::before,
-//*::after {
-//  box-sizing: border-box;
-//}
+.maps-no-js {
+  transform: scale(0);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}

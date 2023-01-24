@@ -1,74 +1,74 @@
 .nav {
-  background-color: #ffffff;
   grid-row: 2 / 3;
   grid-column: 1 / 4;
+  background-color: #ffffff;
 }
 
 .nav__wrapper {
   position: relative;
 }
 
-@media (max-width: 767px) {
-  .nav__list {
+.nav__list {
+  @media (max-width: 767px) {
     position: absolute;
+    z-index: 1;
+    min-width: 100%;
     margin: 0;
     padding: 0;
-    list-style-type: none;
     background-color: #ffffff;
-    min-width: 100%;
-    z-index: 1;
+    list-style-type: none;
   }
 
-  .nav--closed .nav__list {
+  @media (min-width: 768px) {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 620px;
+    padding: 0;
+  }
+}
+
+.nav--closed .nav__list {
+  @media (max-width: 767px) {
     display: none;
   }
+}
 
-  .nav--nojs .nav-toggle {
+.nav--nojs .nav-toggle {
+  @media (max-width: 767px) {
     display: none;
   }
+}
 
-  .nav--nojs .nav__list {
+.nav--nojs .nav__list {
+  @media (max-width: 767px) {
     position: relative;
     display: block;
   }
 }
-/*
-@media (min-width: 768px) {
-  .nav__list {
-    min-width: 320px;
-  }
-}
-*/
-@media (min-width: 768px) {
-  .nav__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: static;
-    padding: 0;
-  }
-}
 
 .nav__list-item {
-  text-align: center;
   display: block;
+  padding: 22px 0 20px 0;
+  text-align: center;
   border-top: 1px solid #e6e6e6;
-  padding: 22px 0 24px 0;
 
   @media (min-width: 768px) {
+    padding: 27px 0 24px 36px;
     border-top: none;
-    padding: 22px 0 24px 34px;
   }
 
   @media (min-width: 1440px) {
     z-index: 2;
+    padding-top: 25px;
   }
 }
 
 .nav__list-link {
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -101,8 +101,8 @@
 
 @media (min-width: 768px) {
   .nav__list-link--current::after {
-    display: flex;
     content: "";
+    display: flex;
     width: inherit;
     height: 2px;
     margin: 0;
@@ -113,7 +113,7 @@
 
 @media (min-width: 1440px) {
   .nav__list-link--current:not(.nav__list-link--another-strip)::after {
-    margin-top: 8px;
+    margin-top: 6px;
     background-color: #ffffff;
   }
 }
@@ -125,8 +125,3 @@
     border-bottom: none;
   }
 }
-/*
-.show {
-  display: block;
-}
-*/
