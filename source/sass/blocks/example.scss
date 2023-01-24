@@ -240,15 +240,11 @@
   height: 100%;
 }
 
-.slider-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .example__result-img {
   display: block;
   max-width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .example__result-before {
@@ -327,4 +323,3 @@
 .example__slider-range:active {
   opacity: 0.8;
 }
-

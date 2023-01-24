@@ -67,11 +67,11 @@
   padding-top: 26px;
   padding-right: 21px;
   padding-bottom: 26px;
-  margin-left: -10px;
+  margin-left: -5px;
   line-height: 20px;
 
   @media (min-width: 768px) {
-    padding-top: 20px;
+    padding-top: 25px;
     padding-right: 39px;
     text-align: right;
     font-size: 16px;
@@ -84,34 +84,11 @@
   }
 }
 
-.contacts-br2,
-.contacts-br3,
-.contacts-br4,
-.contacts-br5 {
+.contacts__empty-line {
   display: none;
-}
 
-@media (min-width: 768px) {
-  .contacts-br1,
-  .contacts-br3 {
+  @media (min-width: 768px) {
     display: block;
-  }
-}
-
-@media (min-width: 1440px) {
-  .contacts-br1,
-  .contacts-br2,
-  .contacts-br3,
-  .contacts-br5 {
-    display: block;
-  }
-}
-
-@media (min-width: 1440px) {
-  .contacts-br2,
-  .contacts-br4,
-  .contacts-br5 {
-    display: none;
   }
 }
 
