@@ -61,9 +61,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    grid-column-gap: 81px;
+    grid-column-gap: 77px;//-------
+    grid-row-gap: 20px;
     align-items: start;
-    padding-bottom: 0;
+    padding-bottom: 110px;
   }
 }
 
@@ -176,6 +177,7 @@
   }
 
   @media (min-width: 1440px) {
+    margin-left: 0;//=======
     padding-right: 0;
   }
 }

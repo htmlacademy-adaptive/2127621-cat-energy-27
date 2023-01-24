@@ -46,6 +46,7 @@
   }
 
   @media (min-width: 1440px) {
+    position: relative;
     margin-left: 80px;
     padding-left: 110px;
     padding-right: 110px;
@@ -53,7 +54,7 @@
 }
 
 @media (min-width: 1440px) {
-  .hero__wrapper::after {
+  .hero::after {
     position: absolute;
     content: "";
     top: 0;
@@ -91,6 +92,7 @@
   }
 
   @media (min-width: 1440px) {
+    width: 420px;
     padding-top: 78px;
     padding-left: 0;
     text-align: left;
@@ -108,7 +110,6 @@
   @media (min-width: 768px) {
     display: flex;
     margin-top: 40px;
-    //margin-left: 2px;
     padding-left: 92px;
     text-align: left;
     font-size: 20px;
@@ -117,6 +118,7 @@
   }
 
   @media (min-width: 1440px) {
+    width: 420px;
     padding-top: 0;
     padding-left: 2px;
     text-align: left;
@@ -141,11 +143,9 @@
 
   @media (min-width: 1440px) {
     position: absolute;
-    top: 91px;
-    right: -225px;
+    top: -54px;
+    right: -149px;
     z-index: 2;
-    grid-column: 2 / 3;
-    grid-row: 1 / -1;
     width: 552px;
     height: auto;
     padding-top: 50px;
@@ -154,7 +154,6 @@
 
 .hero__link {
   display: block;
-  //width: 192px;
   margin-top: 3px;
   padding: 11px 73px;
   text-transform: uppercase;
