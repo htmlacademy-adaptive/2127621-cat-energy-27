@@ -84,11 +84,10 @@
   }
 }
 
-.contacts__empty-line {
-  display: none;
-
+.contacts__empty-line::after {
   @media (min-width: 768px) {
-    display: block;
+    content: "\a";
+    white-space: pre;
   }
 }
 
