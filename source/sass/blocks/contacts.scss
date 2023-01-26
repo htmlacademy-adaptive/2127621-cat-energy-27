@@ -84,10 +84,10 @@
   }
 }
 
-.contacts__empty-line::after {
+.contacts__text-city {
   @media (min-width: 768px) {
-    content: "\a";
-    white-space: pre;
+    display: block;
+    margin-top: 20px;
   }
 }
 
